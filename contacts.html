@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="./assets/icon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Корпорация Дезинфекции</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/icon/logo.png" alt="logo">
+                <a href="./index.html"></a>
+            </div>
+            <div class="services">
+                <svg class="services__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path d="M2.54541 7.63635H25.4545" stroke="#F5C233" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M2.54541 14H25.4545" stroke="#F5C233" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M2.54541 20.3636H14" stroke="#F5C233" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <a href="./services.html">Услуги</a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="./about-us.html" class="menu__item">О нас</a></li>
+                    <li><a href="./portfolio.html" class="menu__item">Наши работы</a></li>
+                    <li><a href="./products.html" class="menu__item">Препараты</a></li>
+                    <li><a href="./personal.html" class="menu__item">Специалисты</a></li>
+                    <li><a href="./sertifications.html" class="menu__item">Сертификаты</a></li>
+                    <li><a href="./contacts.html" class="menu__item">Контакты</a></li>
+                    <li><a href="./blog.html" class="menu__item">Блог</a></li> 
+                </ul>
+            </nav>
+            <div class="phone">
+                <div class="phone__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M3.3953 18.7573L3.49118 18.5045L3.33217 18.2859C2.04885 16.5213 1.2998 14.3558 1.2998 12C1.2998 6.08813 6.08795 1.29999 11.9998 1.29999C17.9117 1.29999 22.6998 6.08813 22.6998 12C22.6998 17.9118 17.9117 22.7 11.9998 22.7C9.83133 22.7 7.7997 22.0577 6.11715 20.936L5.92393 20.8071L5.70085 20.8717L2.21025 21.8815L3.3953 18.7573ZM18.3132 17.0057L18.3315 16.9878L18.3479 16.9681C18.9188 16.283 18.9326 15.2416 18.2999 14.5693L18.2947 14.5638L18.2894 14.5584L16.5254 12.7944C15.6549 11.924 14.1306 12.2608 13.7623 13.4478L13.7622 13.4478L13.7609 13.4523C13.6751 13.7383 13.3087 13.9468 12.9891 13.8669L12.9865 13.8663C12.4776 13.7419 11.8121 13.3249 11.2223 12.7484C10.6317 12.1711 10.2019 11.5166 10.0786 10.99L10.0726 10.964L10.0637 10.9388C9.98191 10.705 10.1425 10.3374 10.5063 10.2063C11.6849 9.83231 12.0172 8.31432 11.1494 7.44643L9.38536 5.68243L9.38 5.67708L9.37449 5.67189C8.71202 5.04839 7.64721 5.03347 6.99825 5.68243L5.79425 6.88643L5.79416 6.88634L5.78613 6.89475C5.37538 7.32506 5.21494 7.90644 5.21951 8.5225C5.22406 9.13713 5.39131 9.82542 5.68098 10.5395C6.26098 11.9691 7.36806 13.5912 8.87359 15.0969C10.3777 16.6151 11.9996 17.7442 13.4342 18.3321C14.1508 18.6258 14.8445 18.7942 15.4668 18.7917C16.0923 18.7891 16.6776 18.6118 17.1111 18.1798L18.3132 17.0057Z" stroke="#F5C233"/>
+                    </svg>
+                </div>
+                <span>+7 495 256 99 99</span>
+                <a href="#" class="phone__link">Заказать звонок</a>
+            </div>
+        </div>
+    </header>
+    <div class="services-menu services-menu__hide">
+        <div class="container">
+            <h2 class="services-menu__title title-1">Меню</h2>
+            <h2 class="services-menu__title title-2">Услуги</h2>
+            <div class="services-menu__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                    <path clip-rule="evenodd" d="M15.1569 14.0989C14.864 13.806 14.3891 13.806 14.0962 14.0989C13.8033 14.3918 13.8033 14.8666 14.0962 15.1595L28.3506 29.4139L14.0954 43.6692C13.8025 43.9621 13.8025 44.437 14.0954 44.7299C14.3882 45.0228 14.8631 45.0228 15.156 44.7299L29.4113 30.4746L43.6673 44.7306C43.9602 45.0235 44.4351 45.0235 44.728 44.7306C45.0209 44.4378 45.0209 43.9629 44.728 43.67L30.4719 29.4139L44.7271 15.1588C45.02 14.8659 45.02 14.391 44.7271 14.0981C44.4342 13.8052 43.9594 13.8052 43.6665 14.0981L29.4113 28.3533L15.1569 14.0989Z"/>
+                </svg>
+            </div>
+            <ul class="services-menu__menu">
+                <li><a href="./about-us.html" class="services-menu__menu__item">О нас</a></li>
+                <li><a href="./portfolio.html" class="services-menu__menu__item">Наши работы</a></li>
+                <li><a href="./products.html" class="services-menu__menu__item">Препараты</a></li>
+                <li><a href="./personal.html" class="services-menu__menu__item">Специалисты</a></li>
+                <li><a href="./sertifications.html" class="services-menu__menu__item">Сертификаты</a></li>
+                <li><a href="./contacts.html" class="services-menu__menu__item">Контакты</a></li>
+                <li><a href="./blog.html" class="services-menu__menu__item">Блог</a></li> 
+            </ul>
+            <div class="services-menu__wrap">
+                <div class="services-menu__wrap__item">
+                    <h2 class="services-menu__wrap__item__title">Услуги для квартир</h2>
+                    <ul class="services-menu__wrap__item__list">
+                        <li>Уничтожение клопов</li>
+                        <li>Уничтожение тараканов</li>
+                        <li>Дезинфекция квартиры</li>
+                        <li>Дератизация и дезинсекция квартиры</li>
+                        <li>Экспертиза СЭС в квартире</li>
+                    </ul>
+                </div>
+                <div class="services-menu__wrap__item">
+                    <h2 class="services-menu__wrap__item__title">Услуги для коттеджей</h2>
+                    <ul class="services-menu__wrap__item__list">
+                        <li>Обработка от клещей</li>
+                        <li>Уничтожение комаров</li>
+                        <li>Уничтожение мышей</li>
+                        <li>Уничтожение кротов</li>
+                        <li>Уничтожение ос и шершней</li>
+                        <li>Обработка от мух</li>
+                    </ul>
+                </div>
+                <div class="services-menu__wrap__item">
+                    <h2 class="services-menu__wrap__item__title">Услуги для организаций</h2>
+                    <ul class="services-menu__wrap__item__list">
+                        <li>Дератизация и дезинфекция офиса</li>
+                        <li>Дератизация и дезинфекция склада</li>
+                        <li>Дезинсекция в мини гостиницах</li>
+                        <li>Дезинсекция на предприятиях</li>
+                        <li>Сервисы СЭС для общепита</li>
+                        <li>Услуги для животноводческих помещений</li>
+                    </ul>
+                </div>
+                <div class="services-menu__wrap__item">
+                    <h2 class="services-menu__wrap__item__title">Уничтожение насекомых</h2>
+                    <ul class="services-menu__wrap__item__list">
+                        <li>Дезинсекция блох</li>
+                        <li>Дезинсекция муравьев</li>
+                        <li>Дезинсекция подвалов</li>
+                        <li>Дезинсекция одежды</li>
+                        <li>Обработка помещений от насекомых</li>
+                        <li>Дезинсекция объектов</li>
+                    </ul>
+                </div>
+                <div class="services-menu__wrap__item">
+                    <h2 class="services-menu__wrap__item__title">Уничтожение грызунов</h2>
+                    <ul class="services-menu__wrap__item__list">
+                        <li>Дератизация территории</li>
+                        <li>Дератизация предприятий и организаций</li>
+                    </ul>
+                </div>
+                <div class="services-menu__wrap__item">
+                    <h2 class="services-menu__wrap__item__title">Дезинфекция</h2>
+                    <ul class="services-menu__wrap__item__list">
+                        <li>Дезинфекция после смерти</li>
+                        <li>Дезинфекция автотранспорта</li>
+                        <li>Дезинфекция от коронавируса</li>
+                    </ul>
+                </div>
+                <div class="services-menu__wrap__item">
+                    <h2 class="services-menu__wrap__item__title">Дезодорация</h2>
+                    <ul class="services-menu__wrap__item__list">
+                        <li>Устранение неприятных запахов</li>
+                    </ul>
+                </div>
+                <div class="services-menu__wrap__item">
+                    <h2 class="services-menu__wrap__item__title">Документы СЭС</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main-contacts">
+        <div class="container">
+            <div class="main-contacts__links">
+                <span>Главная</span>
+                <span>Контакты</span>
+            </div>
+            <h1 class="main-contacts__title">Контакты</h1>
+            <div class="main-contacts__descr">
+                Специалисты “Корпорации дезинфекции” в любое время готовы прийти к вам на помощь, выполнить любые работы по дезинсекции, дератизации, дезинфекции и другими видами услуг.
+            </div>
+    </section>
+    <section class="contacts">
+       <div class="container">
+        <div class="contacts__wrap">
+            <div class="contacts__wrap__content">
+                <div class="contacts__wrap__content__item">
+                    <div class="contacts__wrap__content__item__header">
+                        <div class="contacts__wrap__content__item__icon">
+                            <img src="./assets/icon/footer/phone.png" alt="contact-icon">
+                            <span class="contacts__wrap__content__item__title">Телефон</span>
+                        </div>
+                    </div>
+                    <div class="contacts__wrap__content__item__descr">
+                        +7 495 333 66 99
+                    </div>
+                </div>
+                <div class="contacts__wrap__content__item">
+                    <div class="contacts__wrap__content__item__header">
+                        <div class="contacts__wrap__content__item__icon">
+                            <img src="./assets/icon/footer/adress.png" alt="contact-icon">
+                            <span class="contacts__wrap__content__item__title">Адрес</span>
+                        </div>
+                    </div>
+                    <div class="contacts__wrap__content__item__descr">
+                        г. Москва ул. Казанская 57 корп. 8а офис 15
+                    </div>
+                </div>
+                <div class="contacts__wrap__content__item">
+                    <div class="contacts__wrap__content__item__header">
+                        <div class="contacts__wrap__content__item__icon">
+                            <img src="./assets/icon/footer/adress.png" alt="contact-icon">
+                            <span class="contacts__wrap__content__item__title">Мессенджеры</span>
+                        </div>
+                    </div>
+                    <div class="contacts__wrap__content__item__descr">
+                        <div class="contacts__wrap__content__item__descr__social">
+                            <div class="contacts__wrap__content__item__descr__social__icon">
+                                <img src="./assets/icon/footer/whats-app.png" alt="whats-app-icon">
+                                <a href="#" class="contacts__wrap__content__item__title">WhatsApp</a>
+                            </div>
+                            <div class="contacts__wrap__content__item__descr__social__icon">
+                                <img src="./assets/icon/footer/telegram.png" alt="telegram-icon>
+                                <a href="#" class="contacts__wrap__content__item__title">Telegram</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__wrap__content__item">
+                    <div class="contacts__wrap__content__item__header">
+                        <div class="contacts__wrap__content__item__icon">
+                            <img src="./assets/icon/footer/clock.png" alt="contact-icon">
+                            <span class="contacts__wrap__content__item__title">Часы работы</span>
+                        </div>
+                    </div>
+                    <div class="contacts__wrap__content__item__descr">
+                        Круглосуточно без выходных
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+        <div class="questions__entry">
+            <div class="container">
+                <h2 class="questions__entry__title">Хотите задать свой вопрос?</h2>
+                <div class="questions__entry__form wpcf7-form">
+                    <form action="#">
+                        <span class="wpcf7-form-control-wrap">
+                            <input type="text" placeholder="Ваше имя">
+                        </span>
+                        <span class="wpcf7-form-control-wrap">
+                            <input type="tel" placeholder="Номер телефона*">
+                        </span>
+                        <div class="questions__entry__form__policy">
+                            Отправляя заявку, Вы даете согласие на обработку персональных данных, установленными <a href="#">политикой конфиденциальности</a>
+                        </div>
+                        <a href="#" class="wpcf7-form-control wpcf7-submit btn">
+                            Задать вопрос
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12">
+                                <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75V5.25ZM21.5303 6.53033C21.8232 6.23744 21.8232 5.76256 21.5303 5.46967L16.7574 0.696699C16.4645 0.403806 15.9896 0.403806 15.6967 0.696699C15.4038 0.989593 15.4038 1.46447 15.6967 1.75736L19.9393 6L15.6967 10.2426C15.4038 10.5355 15.4038 11.0104 15.6967 11.3033C15.9896 11.5962 16.4645 11.5962 16.7574 11.3033L21.5303 6.53033ZM1 6.75H21V5.25H1V6.75Z"/>
+                            </svg>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <div class="modal__wrap">
+            <div class="modal__wrap__window">
+                <h2 class="modal__wrap__window__title">Заказать звонок</h2>
+                <div class="modal__wrap__window__text">
+                    Мы перезвоним вам в ближайшее время и расскажем как помочь вам или вашему близкому.
+                </div>
+                <div class="modal__wrap__window__form wpcf7-form">
+                    <form action="#">
+                        <span class="wpcf7-form-control-wrap">
+                            <input type="text" placeholder="Ваше имя">
+                        </span>
+                        <span class="wpcf7-form-control-wrap">
+                            <input type="tel" placeholder="Номер телефона*">
+                        </span>
+                        <div class="modal__wrap__window__form__policy">
+                            Отправляя заявку, Вы даете согласие на обработку персональных данных, установленными <a href="#">политикой конфиденциальности</a>
+                        </div>
+                        <a href="#" class="wpcf7-form-control wpcf7-submit btn">
+                            Отправить
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12">
+                                <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75V5.25ZM21.5303 6.53033C21.8232 6.23744 21.8232 5.76256 21.5303 5.46967L16.7574 0.696699C16.4645 0.403806 15.9896 0.403806 15.6967 0.696699C15.4038 0.989593 15.4038 1.46447 15.6967 1.75736L19.9393 6L15.6967 10.2426C15.4038 10.5355 15.4038 11.0104 15.6967 11.3033C15.9896 11.5962 16.4645 11.5962 16.7574 11.3033L21.5303 6.53033ZM1 6.75H21V5.25H1V6.75Z"/>
+                            </svg>
+                        </a>
+                    </form>
+                </div>
+            </div>
+            <div class="modal__wrap__decor">
+                <div class="modal__wrap__decor__close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1567 14.0989C14.8638 13.806 14.389 13.806 14.0961 14.0989C13.8032 14.3918 13.8032 14.8666 14.0961 15.1595L28.3505 29.4139L14.0952 43.6692C13.8023 43.9621 13.8023 44.437 14.0952 44.7299C14.3881 45.0228 14.863 45.0228 15.1559 44.7299L29.4112 30.4746L43.6672 44.7306C43.9601 45.0235 44.435 45.0235 44.7279 44.7306C45.0208 44.4378 45.0208 43.9629 44.7279 43.67L30.4718 29.4139L44.727 15.1588C45.0199 14.8659 45.0199 14.391 44.727 14.0981C44.4341 13.8052 43.9592 13.8052 43.6664 14.0981L29.4112 28.3533L15.1567 14.0989Z" fill="#F5C233"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal__wrap__decor__img">
+                <img src="./assets/img/modal-decor.png" alt="modal-decor-img">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-wrap__main">
+                    <div class="footer-wrap__main__logo">
+                        <img src="./assets/icon/logo.png" alt="logo">
+                    </div>
+                    <div class="footer-wrap__main__descr">
+                        Круглосуточная служба дезинфекции и дезинсекции в жилых и нежилых помещениях, на открытых пространствах.
+                    </div>
+                    <ul class="footer-wrap__main__links">
+                        <li><a href="#" class="footer-wrap__main__links__item">Пользовательское соглашение</a></li>
+                        <li><a href="#" class="footer-wrap__main__links__item">Политика конфиденциальности</a></li>
+                        <li><a href="#" class="footer-wrap__main__links__item">Карта сайта</a></li>
+                    </ul>
+                    <span class="footer-wrap__main__entry-title">Оставить заявку:</span>
+                    <div class="footer-wrap__main__form wpcf7-form">
+                        <form action="#">
+                            <span class="wpcf7-form-control-wrap">
+                                <input type="tel" placeholder="Номер телефона*">
+                            </span>
+                            <div class="footer-wrap__main__form__policy">
+                                Отправляя заявку, Вы даете согласие на обработку персональных данных, установленными <a href="#">политикой конфиденциальности</a>
+                            </div>
+                            <a href="#" class="wpcf7-form-control wpcf7-submit btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12">
+                                    <path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75V5.25ZM21.5303 6.53033C21.8232 6.23744 21.8232 5.76256 21.5303 5.46967L16.7574 0.696699C16.4645 0.403806 15.9896 0.403806 15.6967 0.696699C15.4038 0.989593 15.4038 1.46447 15.6967 1.75736L19.9393 6L15.6967 10.2426C15.4038 10.5355 15.4038 11.0104 15.6967 11.3033C15.9896 11.5962 16.4645 11.5962 16.7574 11.3033L21.5303 6.53033ZM1 6.75H21V5.25H1V6.75Z"/>
+                                </svg>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-wrap__service">
+                    <h2 class="footer-wrap__service__title">Услуги</h2>
+                    <ul class="footer-wrap__service__list">
+                        <li><a href="#" class="footer-wrap__service__list__link">Услуги для квартир</a></li>
+                        <li><a href="#" class="footer-wrap__service__list__link">Документы СЭС</a></li>
+                        <li><a href="#" class="footer-wrap__service__list__link">Услуги для котеджей</a></li>
+                        <li><a href="#" class="footer-wrap__service__list__link">Услуги для организаций</a></li>
+                        <li><a href="#" class="footer-wrap__service__list__link">Уничтожение насекомых</a></li>
+                        <li><a href="#" class="footer-wrap__service__list__link">Уничтожение грызунов</a></li>
+                        <li><a href="#" class="footer-wrap__service__list__link">Дезинфекция</a></li>
+                        <li><a href="#" class="footer-wrap__service__list__link">Дезодорация</a></li>
+                    </ul>
+                </div>
+                <div class="footer-wrap__menu">
+                    <h2 class="footer-wrap__menu__title">Меню</h2>
+                    <ul class="footer-wrap__menu__list">
+                        <li><a href="#" class="footer-wrap__menu__list__item">О нас</a></li>
+                        <li><a href="#" class="footer-wrap__menu__list__item">Наши работы</a></li>
+                        <li><a href="#" class="footer-wrap__menu__list__item">Препараты</a></li>
+                        <li><a href="#" class="footer-wrap__menu__list__item">Специалисты</a></li>
+                        <li><a href="#" class="footer-wrap__menu__list__item">Сертификаты</a></li>
+                        <li><a href="#" class="footer-wrap__menu__list__item">Контакты</a></li>
+                        <li><a href="#" class="footer-wrap__menu__list__item">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-wrap__contacts">
+                    <h2 class="footer-wrap__contacts__title">Контакты</h2>
+                    <div class="footer-wrap__contacts__content">
+                        <div class="footer-wrap__contacts__content__item">
+                            <div class="footer-wrap__contacts__content__item__icon">
+                                <img src="./assets/icon/footer/adress.png" alt="adress-icon">
+                            </div>
+                            <span class="footer-wrap__contacts__content__item__text">
+                                г. Москва ул. Казанская 57 корп. 8а офис 15
+                            </span>
+                        </div>
+                        <div class="footer-wrap__contacts__content__item">
+                            <div class="footer-wrap__contacts__content__item__icon">
+                                <img src="./assets/icon/footer/phone.png" alt="phone-icon">
+                            </div>
+                            <span class="footer-wrap__contacts__content__item__text">
+                                +7 495 333 66 99
+                            </span>
+                        </div>
+                        <div class="footer-wrap__contacts__content__item">
+                            <div class="footer-wrap__contacts__content__item__icon">
+                                <img src="./assets/icon/footer/clock.png" alt="taimer-icon">
+                            </div>
+                            <span class="footer-wrap__contacts__content__item__text">
+                                Работаем круглосуточно
+                            </span>
+                        </div>
+                        <div class="footer-wrap__contacts__content__item">
+                            <div class="footer-wrap__contacts__content__item__icon">
+                                <img src="./assets/icon/footer/whats-app.png" alt="whats-app-icon">
+                            </div>
+                            <a href="#" class="footer-wrap__contacts__content__item__link">
+                                Whats App
+                            </a>
+                        </div>
+                        <div class="footer-wrap__contacts__content__item">
+                            <div class="footer-wrap__contacts__content__item__icon">
+                                <img src="./assets/icon/footer/telegram.png" alt="telegram-icon">
+                            </div>
+                            <a href="#" class="footer-wrap__contacts__content__item__link">
+                                Telegram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-city">
+                <span>Богородицк</span>
+                <span>Черноморское</span>
+            </div>
+            <div class="footer-privacy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                    <path d="M0 8.49966C0.00119012 4.08181 3.58192 0.5 8.00034 0.5C12.4194 0.5 16 4.08215 16 8.49966C16 12.9182 12.4191 16.4993 8.00034 16.5C3.58192 16.4992 0.00101557 12.9182 0 8.49932V8.49966ZM1.39113 8.49966C1.39906 12.1495 4.35098 15.1017 8.00047 15.1088C11.6504 15.1018 14.6027 12.1494 14.6088 8.49966C14.6026 4.85084 11.6502 1.89793 8.00047 1.89116C4.35118 1.89803 1.39926 4.85063 1.39113 8.49966Z" fill="#F5C233"/>
+                    <path d="M8.00009 12.6708C6.9352 12.6712 5.86343 12.2621 5.05111 11.449C4.23933 10.6374 3.82873 9.56797 3.8291 8.50358C3.82871 7.43778 4.23665 6.36415 5.05189 5.55152C5.86421 4.73744 6.93611 4.32849 8.00009 4.33008C9.06604 4.32863 10.1373 4.73836 10.9503 5.55152L9.97172 6.53075C9.42518 5.98508 8.71573 5.71508 8.00023 5.7143C7.28536 5.71509 6.5767 5.98495 6.03005 6.53075C5.48472 7.07577 5.21509 7.78577 5.21427 8.50358C5.21507 9.21744 5.48575 9.9248 6.0311 10.4709C6.57592 11.0151 7.28469 11.2853 8.00023 11.2861C8.7159 11.2853 9.42548 11.0151 9.9704 10.4701L9.97186 10.4709L10.95 11.4489C10.1376 12.262 9.06752 12.6706 8.00276 12.6706C8.00223 12.6708 8.00104 12.6708 8.00012 12.6708L8.00009 12.6708Z" fill="#F5C233"/>
+                </svg>
+                <span class="footer-privacy__year">2023г. Все права защищены</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/second-script.js"></script>
+</body>
+</html>
