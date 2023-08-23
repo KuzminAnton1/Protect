@@ -32,8 +32,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 slide.style.display = "none";
                 slide.classList.remove("anim-prev_slide-show");
                 slide.classList.remove("anim-next_slide-show");
-                slide.classList.remove("anim-prev_slide-hide");
-                slide.classList.remove("anim-next_slide-hide");
+                slide.classList.remove("arrow-hide");
+                slide.classList.remove("arrow-hide2");
             })
             arrSlides.forEach(item => {
                 slides[item].style.display = 'block';
@@ -68,6 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 }, 10)
             }
             nextSlide(1);
+            slides[slidesRange[1]].classList.add("arrow-hide");
             });
         
         prev.addEventListener('click', () => {
@@ -77,6 +78,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 }, 10)
             }
             prevSlide(-1);
+            slides[slidesRange[1]].classList.add("arrow-hide2");
         });
     }
 

@@ -115,6 +115,8 @@ window.addEventListener("DOMContentLoaded", () => {
             slide.style.display = "none";
             slide.classList.remove("anim-prev_slide-show");
             slide.classList.remove("anim-next_slide-show");
+            slide.classList.remove("arrow-hide");
+            slide.classList.remove("arrow-hide2");
         })
         slidesRange.forEach(item => {
             slides[item].style.display = 'block';
@@ -141,6 +143,7 @@ window.addEventListener("DOMContentLoaded", () => {
             }, 10)
         }
         nextSlide(1);
+        slides[slidesRange[0]].classList.add("arrow-hide");
         });
     
         prev.addEventListener('click', () => {
@@ -150,6 +153,7 @@ window.addEventListener("DOMContentLoaded", () => {
             }, 10)
         }
         prevSlide(-1);
+        slides[slidesRange[1]].classList.add("arrow-hide2");
         });
     
     }
@@ -259,8 +263,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 slide.style.display = "none";
                 slide.classList.remove("anim-prev_slide-show");
                 slide.classList.remove("anim-next_slide-show");
-                slide.classList.remove("anim-prev_slide-hide");
-                slide.classList.remove("anim-next_slide-hide");
+                slide.classList.remove("arrow-hide");
+                slide.classList.remove("arrow-hide2");
             })
             arrSlides.forEach(item => {
                 slides[item].style.display = 'block';
@@ -295,6 +299,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 }, 10)
             }
             nextSlide(1);
+            slides[slidesRange[1]].classList.add("arrow-hide");
             });
         
         prev.addEventListener('click', () => {
@@ -304,6 +309,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 }, 10)
             }
             prevSlide(-1);
+            slides[slidesRange[1]].classList.add("arrow-hide2");
         });
     }
 
@@ -365,6 +371,58 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         })
     }
+
+    function questions(blocksSel, closeSel, activeCloseClass){
+        const blocks = document.querySelectorAll(blocksSel),
+            close = document.querySelectorAll(closeSel);
+    
+        blocks.forEach((block, i) => {
+            block.addEventListener("click", () => {
+                close[i].classList.toggle(activeCloseClass);
+                let panel = block.nextElementSibling;
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                }else{
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            })
+        })
+    }
+
+    function tabs(headerSel, tabsSel, contentSel, aciveClass, display="block"){
+        const header = document.querySelector(headerSel),
+            tabs = document.querySelectorAll(tabsSel),
+            content = document.querySelectorAll(contentSel);
+        
+        function hideTabs () {
+            content.forEach(item => {
+                item.style.display = 'none';
+                item.classList.remove("anim-next_slide-show");
+            });
+            tabs.forEach(item => {
+                item.classList.remove(aciveClass);
+            });
+        }
+        function showTabs (index = 0) {
+            tabs[index].classList.add(aciveClass);
+            content[index].style.display = display;
+            content[index].classList.add("anim-next_slide-show");
+        }
+        hideTabs();
+        showTabs();
+    
+        header.addEventListener('click', (event) => {
+            if (event.target.classList.contains(tabsSel.slice(1)) || event.target.parentNode.classList.contains(tabsSel.slice(1))){
+                tabs.forEach((item, index) => {
+                    if(event.target == item || event.target.parentNode == item){
+                        hideTabs();
+                        showTabs(index);
+                    }
+                });
+            }
+        });
+    
+    };
     
     modal(".phone__link", ".modal", ".modal__wrap__decor__close-btn");
     serviceMenu(".services__icon", ".services-menu", ".services-menu__close");
@@ -375,6 +433,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
     postHeight(".our-post__wrap__article-wrap__post__btn", ".our-post__wrap__article-wrap__post");
     postScroll(".our-post__wrap__social");
+
+    questions(".questions__wrap__item-wrap__item__question__title", ".questions__wrap__item-wrap__item__question__title__plus", "questions__wrap__item-wrap__item__question__title__plus__plus-rotate");
+    tabs(".questions__wrap__tabs", ".questions__wrap__tabs__item", ".questions__wrap__item-wrap__item", "questions__wrap__tabs__item__active");
 
     if (window.screen.width < 576){
         document.querySelector(".comments__slider__dots").classList.remove("comments__slider__dots__hide");
