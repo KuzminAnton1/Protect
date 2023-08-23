@@ -46,5 +46,23 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         });
     };
+    function serviceMenu(triggerSel, menuSel, closeSel){
+        const trigger = document.querySelector(triggerSel),
+            menu = document.querySelector(menuSel),
+            close = document.querySelector(closeSel);
+    
+        trigger.addEventListener("click", (e) => {
+            if (e.target && (e.target == trigger || e.target.parentNode == trigger)){
+                menu.classList.add("services-menu__show");
+                menu.classList.remove("services-menu__hide");
+            }
+        })
+    
+        close.addEventListener("click", () => {
+            menu.classList.add("services-menu__hide");
+            menu.classList.add("services-menu__hide");
+        })
+    }
     modal(".phone__link", ".modal", ".modal__wrap__decor__close-btn");
+    serviceMenu(".services__icon", ".services-menu", ".services-menu__close");
 })
