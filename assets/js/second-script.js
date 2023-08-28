@@ -63,5 +63,5 @@ window.addEventListener("DOMContentLoaded", () => {
         })
     }
     modal(".phone__link", ".modal", ".modal__wrap__decor__close-btn");
-    serviceMenu(".services__icon", ".services-menu", ".services-menu__close");
+    serviceMenu(".services", ".services-menu", ".services-menu__close");
 })

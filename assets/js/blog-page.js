@@ -34,6 +34,51 @@ window.addEventListener("DOMContentLoaded", () => {
     
     };
 
+    function pageList(postsSel, blockNumSel){
+        const posts = document.querySelectorAll(postsSel),
+            blockNum = document.querySelector(blockNumSel);
+
+        let num = [1];
+        let quantity = 9;
+        let cnt = 1;
+
+        while (quantity < posts.length){
+            if (posts.length >= quantity){
+                cnt += 1;
+                num.push(cnt);
+            }
+            quantity += 9;
+        }
+
+        num.forEach(item => {
+            const link = document.createElement("a");
+            link.textContent = `${item}`;
+            link.classList.add("posts-list__quant__item");
+            blockNum.appendChild(link);
+        })
+
+    };
+
+    function numAddActive(blocksSel, numsSel){
+        const blocks = document.querySelectorAll(blocksSel),
+            nums = document.querySelectorAll(numsSel);
+
+        function addClass(i = 0){
+            nums.forEach(num => {
+                num.classList.remove("active-num");
+            })
+
+            nums[i].classList.add("active-num");
+        }
+
+        addClass();
+    }
+
 
     tabs(".posts-list__tabs", ".posts-list__tabs__item", ".posts-list__post-wrap__posts-page", "posts-list__tabs__item__active");
+
+    pageList(".posts-list__post-wrap__posts-page__item", ".posts-list__quant");
+
+    numAddActive(".posts-list__post-wrap__posts-page", ".posts-list__quant__item");
+
 })
