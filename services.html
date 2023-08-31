@@ -7,6 +7,14 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <link rel="stylesheet" href="./style.css">
     <title>Корпорация Дезинфекции</title>
 </head>
@@ -204,90 +212,81 @@
     </header>
     <div class="services-menu services-menu__hide">
         <div class="container">
-            <h2 class="services-menu__title title-1 color-yellow">Меню</h2>
-            <a href="./services.html" class="services-menu__title title-2 color-yellow">Услуги</a>
             <div class="services-menu__close">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
                     <path clip-rule="evenodd" d="M15.1569 14.0989C14.864 13.806 14.3891 13.806 14.0962 14.0989C13.8033 14.3918 13.8033 14.8666 14.0962 15.1595L28.3506 29.4139L14.0954 43.6692C13.8025 43.9621 13.8025 44.437 14.0954 44.7299C14.3882 45.0228 14.8631 45.0228 15.156 44.7299L29.4113 30.4746L43.6673 44.7306C43.9602 45.0235 44.4351 45.0235 44.728 44.7306C45.0209 44.4378 45.0209 43.9629 44.728 43.67L30.4719 29.4139L44.7271 15.1588C45.02 14.8659 45.02 14.391 44.7271 14.0981C44.4342 13.8052 43.9594 13.8052 43.6665 14.0981L29.4113 28.3533L15.1569 14.0989Z"/>
                 </svg>
             </div>
-            <ul class="services-menu__menu">
-                <li><a href="./about-us.html" class="services-menu__menu__item">О нас</a></li>
-                <li><a href="./portfolio.html" class="services-menu__menu__item">Наши работы</a></li>
-                <li><a href="./products.html" class="services-menu__menu__item">Препараты</a></li>
-                <li><a href="./personal.html" class="services-menu__menu__item">Специалисты</a></li>
-                <li><a href="./sertifications.html" class="services-menu__menu__item">Сертификаты</a></li>
-                <li><a href="./contacts.html" class="services-menu__menu__item">Контакты</a></li>
-                <li><a href="./blog.html" class="services-menu__menu__item">Блог</a></li>
-            </ul>
             <div class="services-menu__wrap">
-                <div class="services-menu__wrap__item">
-                    <h2 class="services-menu__wrap__item__title">Услуги для квартир</h2>
-                    <ul class="services-menu__wrap__item__list">
-                        <li>Уничтожение клопов</li>
-                        <li>Уничтожение тараканов</li>
-                        <li>Дезинфекция квартиры</li>
-                        <li>Дератизация и дезинсекция квартиры</li>
-                        <li>Экспертиза СЭС в квартире</li>
-                    </ul>
-                </div>
-                <div class="services-menu__wrap__item">
-                    <h2 class="services-menu__wrap__item__title">Услуги для коттеджей</h2>
-                    <ul class="services-menu__wrap__item__list">
-                        <li>Обработка от клещей</li>
-                        <li>Уничтожение комаров</li>
-                        <li>Уничтожение мышей</li>
-                        <li>Уничтожение кротов</li>
-                        <li>Уничтожение ос и шершней</li>
-                        <li>Обработка от мух</li>
-                    </ul>
-                </div>
-                <div class="services-menu__wrap__item">
-                    <h2 class="services-menu__wrap__item__title">Услуги для организаций</h2>
-                    <ul class="services-menu__wrap__item__list">
-                        <li>Дератизация и дезинфекция офиса</li>
-                        <li>Дератизация и дезинфекция склада</li>
-                        <li>Дезинсекция в мини гостиницах</li>
-                        <li>Дезинсекция на предприятиях</li>
-                        <li>Сервисы СЭС для общепита</li>
-                        <li>Услуги для животноводческих помещений</li>
-                    </ul>
-                </div>
-                <div class="services-menu__wrap__item">
-                    <h2 class="services-menu__wrap__item__title">Уничтожение насекомых</h2>
-                    <ul class="services-menu__wrap__item__list">
-                        <li>Дезинсекция блох</li>
-                        <li>Дезинсекция муравьев</li>
-                        <li>Дезинсекция подвалов</li>
-                        <li>Дезинсекция одежды</li>
-                        <li>Обработка помещений от насекомых</li>
-                        <li>Дезинсекция объектов</li>
-                    </ul>
-                </div>
-                <div class="services-menu__wrap__item">
-                    <h2 class="services-menu__wrap__item__title">Уничтожение грызунов</h2>
-                    <ul class="services-menu__wrap__item__list">
-                        <li>Дератизация территории</li>
-                        <li>Дератизация предприятий и организаций</li>
-                    </ul>
-                </div>
-                <div class="services-menu__wrap__item">
-                    <h2 class="services-menu__wrap__item__title">Дезинфекция</h2>
-                    <ul class="services-menu__wrap__item__list">
-                        <li>Дезинфекция после смерти</li>
-                        <li>Дезинфекция автотранспорта</li>
-                        <li>Дезинфекция от коронавируса</li>
-                    </ul>
-                </div>
-                <div class="services-menu__wrap__item">
-                    <h2 class="services-menu__wrap__item__title">Дезодорация</h2>
-                    <ul class="services-menu__wrap__item__list">
-                        <li>Устранение неприятных запахов</li>
-                    </ul>
-                </div>
-                <div class="services-menu__wrap__item">
-                    <h2 class="services-menu__wrap__item__title">Документы СЭС</h2>
-                </div>
+                <ul class="services-menu__wrap__main-menu">
+                    <li><a href="./about-us.html" class="services-menu__wrap__main-menu__item">О нас</a></li>
+                    <li><a href="./portfolio.html" class="services-menu__wrap__main-menu__item">Наши работы</a></li>
+                    <li><a href="./products.html" class="services-menu__wrap__main-menu__item">Препараты</a></li>
+                    <li><a href="./personal.html" class="services-menu__wrap__main-menu__item">Специалисты</a></li>
+                    <li><a href="./sertifications.html" class="services-menu__wrap__main-menu__item">Сертификаты</a></li>
+                    <li><a href="./contacts.html" class="services-menu__wrap__main-menu__item">Контакты</a></li>
+                    <li><a href="./blog.html" class="services-menu__wrap__main-menu__item">Блог</a></li>
+                </ul>
+                <ul class="services-menu__wrap__second-menu">
+                    <li class="services-menu__wrap__second-menu__item">Услуги для квартир
+                        <ul class="services-menu__wrap__second-menu__item__sub-menu">
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#"> Уничтожение клопов</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#"> Уничтожение тараканов</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#"> Дезинфекция квартиры</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#"> Дератизация и дезинсекция квартиры</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#"> Экспертиза СЭС в квартире</a></li>
+                        </ul>
+                    </li>
+                    <li class="services-menu__wrap__second-menu__item">Услуги для коттеджей
+                        <ul class="services-menu__wrap__second-menu__item__sub-menu">
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Обработка от клещей</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Уничтожение комаров</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Уничтожение мышей</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Уничтожение кротов</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Уничтожение ос и шершней</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Обработка от мух</a></li>
+                        </ul>
+                    </li>
+                    <li class="services-menu__wrap__second-menu__item">Услуги для организаций
+                        <ul class="services-menu__wrap__second-menu__item__sub-menu">
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дератизация и дезинфекция офиса</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дератизация и дезинфекция склада</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дезинсекция в мини гостиницах</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дезинсекция на предприятиях</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Сервисы СЭС для общепита</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Услуги для животноводческих помещений</a></li>
+                        </ul>
+                    </li>
+                    <li class="services-menu__wrap__second-menu__item">Уничтожение насекомых
+                        <ul class="services-menu__wrap__second-menu__item__sub-menu">
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дезинсекция блох</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дезинсекция муравьев</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дезинсекция подвалов</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дезинсекция одежды</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Обработка помещений от насекомых</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дезинсекция объектов</a></li>
+                        </ul>
+                    </li>
+                    <li class="services-menu__wrap__second-menu__item">Уничтожение грызунов
+                        <ul class="services-menu__wrap__second-menu__item__sub-menu">
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дератизация территории</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дератизация предприятий и организаций</a></li>
+                        </ul>
+                    </li>
+                    <li class="services-menu__wrap__second-menu__item">Дезинфекция
+                        <ul class="services-menu__wrap__second-menu__item__sub-menu">
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дезинфекция после смерти</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дезинфекция автотранспорта</a></li>
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Дезинфекция от коронавируса</a></li>
+                        </ul>
+                    </li>
+                    <li class="services-menu__wrap__second-menu__item">Дезодорация
+                        <ul class="services-menu__wrap__second-menu__item__sub-menu">
+                            <li class="services-menu__wrap__second-menu__item__sub-menu__link"><a href="#">Устранение неприятных запахов</a></li>
+                        </ul>
+                    </li>
+                    <li class="services-menu__wrap__second-menu__item">Документы СЭС</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -347,7 +346,7 @@
             </div>
         </div>
     </section>
-    <section class="price-list">
+    <section class="price-list sect-pad">
         <div class="container">
             <div class="title-wrap">
                 <h2 class="price-list__title title color-yellow">Цены на услуги дезинсекции</h2>
@@ -466,7 +465,7 @@
             </div>
         </div>
     </section>
-    <section class="our-post">
+    <section class="our-post sect-pad">
         <div class="container">
             <div class="our-post__wrap">
                 <div class="our-post__wrap__article-wrap">
@@ -505,7 +504,7 @@
             </div>
         </div>
     </section>
-    <section class="products-service">
+    <section class="products-service sect-pad">
         <div class="container">
             <div class="title-wrap">
                 <h2 class="products__title title color-yellow">Препараты, которые <span>мы используем в работе</span></h2>
@@ -517,228 +516,230 @@
                         <path d="M29 29.25C29.4142 29.25 29.75 29.5858 29.75 30C29.75 30.4142 29.4142 30.75 29 30.75V29.25ZM10.4697 30.5303C10.1768 30.2374 10.1768 29.7626 10.4697 29.4697L15.2426 24.6967C15.5355 24.4038 16.0104 24.4038 16.3033 24.6967C16.5962 24.9896 16.5962 25.4645 16.3033 25.7574L12.0607 30L16.3033 34.2426C16.5962 34.5355 16.5962 35.0104 16.3033 35.3033C16.0104 35.5962 15.5355 35.5962 15.2426 35.3033L10.4697 30.5303ZM29 30.75H11V29.25H29V30.75Z" fill="#F5C233"/>
                     </svg>
                 </div>
-                <div class="products-service__slider__wrap owl-carousel owl-theme">
-                    <div class="products-service__slider__wrap__item">
-                        <div class="products-service__slider__wrap__item__img">
-                            <img src="./assets/img/products/card-img-1.png" alt="product-img">
+                <div class="products-service__slider__wrap swiper">
+                    <div class="swiper-wrapper">
+                        <div class="products-service__slider__wrap__item swiper-slide">
+                            <div class="products-service__slider__wrap__item__img">
+                                <img src="./assets/img/products/card-img-1.png" alt="product-img">
+                            </div>
+                            <span class="products-service__slider__wrap__item__title color-black">Дельта Зона</span>
+                            <div class="products-service__slider__wrap__item__prod-descr">
+                                <span>Производитель: Корея</span>
+                                <span>Вещество: 2,5% пиретроид дельтаметрин</span>
+                                <span>Емкость: 1000 мл.</span>
+                            </div>
+                            <div class="products-service__slider__wrap__item__text color-grey">
+                                <p>
+                                    Инсектоакарицидный препарат для избавления от большинства видов насекомых в виде водной суспензии белого цвета, имеющей вязкую консистенцию,без запаха.
+                                </p>
+                                <p>
+                                    Применяется в жилых, общественных, производственных постройках, в дошкольных и школьных учреждениях, на объектах пищепрома.. Продолжительность действия до 2 мес. Расход смеси: от 50 до 100 мл/м2.
+                                </p>
+                            </div>
+                            <ul class="products-service__slider__wrap__item__prod-plus color-grey">Особенности препарата:
+                                <li class="color-grey">
+                                    Отсутствие посторонних, неприятных запахов
+                                </li>
+                                <li class="color-grey" class="color-grey">
+                                    Насекомые исчезают уже через несколько дней после использования
+                                </li>
+                                <li class="color-grey" class="color-grey">
+                                    Продолжительность действия 2 месяца.
+                                </li>
+                                <li class="color-grey" class="color-grey">
+                                    Гарантированное уничтожение клопов, тараканов, мух и других домашних вредителей.
+                                </li>
+                                <li class="color-grey" class="color-grey">
+                                    Отсутствие аллергических реакций и раздражения на инсектицидное средство
+                                </li>
+                                <li class="color-grey" class="color-grey">
+                                    Отрава не видна на обрабатываемой поверхности.
+                                </li>
+                            </ul>
                         </div>
-                        <span class="products-service__slider__wrap__item__title color-black">Дельта Зона</span>
-                        <div class="products-service__slider__wrap__item__prod-descr">
-                            <span>Производитель: Корея</span>
-                            <span>Вещество: 2,5% пиретроид дельтаметрин</span>
-                            <span>Емкость: 1000 мл.</span>
+                        <div class="products-service__slider__wrap__item swiper-slide">
+                            <div class="products-service__slider__wrap__item__img">
+                                <img src="./assets/img/products/card-img-2.png" alt="product-img">
+                            </div>
+                            <span class="products-service__slider__wrap__item__title color-black">К-Отрин СК 50</span>
+                            <div class="products-service__slider__wrap__item__prod-descr">
+                                <span>Производитель: Корея</span>
+                                <span>Вещество: 2,5% пиретроид дельтаметрин</span>
+                                <span>Емкость: 1000 мл.</span>
+                            </div>
+                            <div class="products-service__slider__wrap__item__text color-grey">
+                                <p>
+                                    Средство инсектицидное выполнено в виде жидкости без аромата, имеющей белый или кремовый оттенок. Такая концентрированная суспензия предназначена для борьбы со всеми видами насекомых-паразитов. 
+                                </p>
+                                <p>
+                                    Чтобы сделать рабочую смесь, нужно от 1,2 мл до 6 мл суспензии размешать в одном литре воды. Для водостойкой поверхности расход – около 50 мл/м2 , а для покрытия, хорошо впитывающего влагу, – 100 мл/м2.
+                                </p>
+                            </div>
+                            <ul class="products-service__slider__wrap__item__prod-plus color-grey">Особенности препарата:
+                                <li class="color-grey">
+                                    Не вызывает раздражения слизистых оболочек.
+                                </li>
+                                <li class="color-grey">
+                                    Имеет четвертый класс безопасности
+                                </li>
+                                <li class="color-grey">
+                                    Экономичен
+                                </li>
+                                <li class="color-grey">
+                                    Эффективное средство против клопов, тараканов и других вредителей
+                                </li>
+                                <li class="color-grey">
+                                    Препарат производства компании Bayer (Германия). Срок хранения составляет два года при условии хранения герметично закрытой емкости.
+                                </li>
+                                <li class="color-grey">
+                                    Действие на протяжении 10 недель
+                                </li>
+                            </ul>
                         </div>
-                        <div class="products-service__slider__wrap__item__text color-grey">
-                            <p>
-                                Инсектоакарицидный препарат для избавления от большинства видов насекомых в виде водной суспензии белого цвета, имеющей вязкую консистенцию,без запаха.
-                            </p>
-                            <p>
-                                Применяется в жилых, общественных, производственных постройках, в дошкольных и школьных учреждениях, на объектах пищепрома.. Продолжительность действия до 2 мес. Расход смеси: от 50 до 100 мл/м2.
-                            </p>
+                        <div class="products-service__slider__wrap__item swiper-slide">
+                            <div class="products-service__slider__wrap__item__img">
+                                <img src="./assets/img/products/card-img-3.png" alt="product-img">
+                            </div>
+                            <span class="products-service__slider__wrap__item__title color-black">Кукарача к.э.</span>
+                            <div class="products-service__slider__wrap__item__prod-descr">
+                                <span>Производитель: Россия</span>
+                                <span>Вещество: 20% циперметрин, 10% малатион</span>
+                                <span>Емкость: 1000 мл.</span>
+                            </div>
+                            <div class="products-service__slider__wrap__item__text color-grey">
+                                <p>
+                                    Средство инсектицидное для борьбы с разными разновидностями и насекомых в жилых зданиях, производственных помещениях, нежилых строениях.
+                                </p>
+                                <p>
+                                    Препарат изготовлен в виде концентрированной жидкости светло-желтого оттенка. Эмульсию нужно разбавлять из расчета на 1 литр воды 0,3-5 гр. препарата. Готовой смеси необходимо от 0,05 л до 0,1 л на один м2 Препарат сберегает свою активность до 5 недель.
+                                </p>
+                            </div>
+                            <ul class="products-service__slider__wrap__item__prod-plus">Особенности препарата:
+                                <li class="color-grey">
+                                    Средство применяется для обработки больших площадей с небольшим количеством вредных насекомых.
+                                </li>
+                                <li class="color-grey">
+                                    Наносят на места локализации клопов. Если первая обработка не дала результатов, необходимо нанести химикат во все труднодоступные зоны.
+                                </li>
+                                <li class="color-grey">
+                                    Универсальное средство, которым можно уничтожать клопов, тараканов, мух, муравьев
+                                </li>
+                                <li class="color-grey">
+                                    Гарантированное уничтожение клопов, тараканов, мух и других домашних вредителей.
+                                </li>
+                                <li class="color-grey">
+                                    Срок годности препарата Кукарача составляет два года.
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="products-service__slider__wrap__item__prod-plus color-grey">Особенности препарата:
-                            <li class="color-grey">
-                                Отсутствие посторонних, неприятных запахов
-                            </li>
-                            <li class="color-grey" class="color-grey">
-                                Насекомые исчезают уже через несколько дней после использования
-                            </li>
-                            <li class="color-grey" class="color-grey">
-                                Продолжительность действия 2 месяца.
-                            </li>
-                            <li class="color-grey" class="color-grey">
-                                Гарантированное уничтожение клопов, тараканов, мух и других домашних вредителей.
-                            </li>
-                            <li class="color-grey" class="color-grey">
-                                Отсутствие аллергических реакций и раздражения на инсектицидное средство
-                            </li>
-                            <li class="color-grey" class="color-grey">
-                                Отрава не видна на обрабатываемой поверхности.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="products-service__slider__wrap__item">
-                        <div class="products-service__slider__wrap__item__img">
-                            <img src="./assets/img/products/card-img-2.png" alt="product-img">
+                        <div class="products-service__slider__wrap__item swiper-slide">
+                            <div class="products__slider__wrap__item__img">
+                                <img src="./assets/img/products/card-img-4.png" alt="product-img">
+                            </div>
+                            <span class="products-service__slider__wrap__item__title color-black">Сихлор</span>
+                            <div class="products-service__slider__wrap__item__prod-descr">
+                                <span>Производитель: Нидерланды</span>
+                                <span>Вещество: 20% циперметрин, 10% малатион</span>
+                                <span>Емкость: 1000 мл.</span>
+                            </div>
+                            <div class="products-service__slider__wrap__item__text color-grey">
+                                <p>
+                                    Средство инсектоакарицидное изготовлено в виде концентрированной эмульсии, имеющей прозрачную структуру и нежно-желтый оттенок. Используется в разнообразных помещениях, включая подвалы, мусоропроводы и пр. 
+                                </p>
+                                <p>
+                                    Приготовление смеси: на 1 литр воды разводится от 2,5 мл. до 5 мл. средства. Расходование смеси зависит от типа поверхности и разновидности насекомого: от 0,05 л до 0,1 л. на м2. 
+                                </p>
+                            </div>
+                            <ul class="products-service__slider__wrap__item__prod-plus color-grey">Особенности препарата:
+                                <li class="color-grey">
+                                    Действие направлено на уничтожение клопов, тараканов, ос, мух, муравьев и проч.
+                                </li>
+                                <li class="color-grey">
+                                    Сохраняет свою активность до 5 нед.
+                                </li>
+                                <li class="color-grey">
+                                    Позволяет использовать его в местах большого скопления насекомых, а также применять для проведения медицинской дезинсекции.
+                                </li>
+                                <li class="color-grey">
+                                    Сихлор достаточно опасен при попадании в глаза и на слизистые оболочки. Важно ознакомиться с инструкцией по применению и предусмотреть все средства защиты.
+                                </li>
+                            </ul>
                         </div>
-                        <span class="products-service__slider__wrap__item__title color-black">К-Отрин СК 50</span>
-                        <div class="products-service__slider__wrap__item__prod-descr">
-                            <span>Производитель: Корея</span>
-                            <span>Вещество: 2,5% пиретроид дельтаметрин</span>
-                            <span>Емкость: 1000 мл.</span>
+                        <div class="products-service__slider__wrap__item swiper-slide">
+                            <div class="products-service__slider__wrap__item__img">
+                                <img src="./assets/img/products/card-img-5.png" alt="product-img">
+                            </div>
+                            <span class="products-service__slider__wrap__item__title color-black">Фендона к.с.</span>
+                            <div class="products-service__slider__wrap__item__prod-descr">
+                                <span>Производитель: Франция</span>
+                                <span>Вещество: 1,5% альфа-циперметрин</span>
+                                <span>Емкость: 1000 мл.</span>
+                            </div>
+                            <div class="products-service__slider__wrap__item__text color-grey">
+                                <p>
+                                    Препарат с сильным инсектицидным воздействием для истребления широкого спектра насекомых. Это белый концентрат эмульсии, не имеющий аромата. 
+                                </p>
+                                <p>
+                                    Рекомендуется применять специалистам, у которых есть разрешение на дезинсекцию жилых, общественных, производственных и прочих объектов. Препарат разводится из расчета 10-40 гр. средства на 1 л. воды. Готовый раствор может расходоваться от 0,05 л до 0,5 л на м2. Сберегается активность после обработки около 8 недель.
+                                </p>
+                            </div>
+                            <ul class="products-service__slider__wrap__item__prod-plus color-grey">Особенности препарата:
+                                <li class="color-grey">
+                                    Химикат не имеет аналогов.
+                                </li>
+                                <li class="color-grey">
+                                    Полностью отсутствует неприятный, запах
+                                </li>
+                                <li class="color-grey">
+                                    Действие направлено на уничтожение всех вредителей: блох, тараканов, клопов, муравьев, мух. Эффект 2 мес.
+                                </li>
+                                <li class="color-grey">
+                                    Под действием активного вещества препарата насекомые теряет способность двигаться уже спустя тридцать минут.
+                                </li>
+                                <li class="color-grey">
+                                    Используется для обработки любых помещений, в том числе в детских садах, школах и медицинских учреждениях.
+                                </li>
+                                <li class="color-grey">
+                                    Срок годности герметично закрытой бутылки составляет три года.
+                                </li>
+                            </ul>
                         </div>
-                        <div class="products-service__slider__wrap__item__text color-grey">
-                            <p>
-                                Средство инсектицидное выполнено в виде жидкости без аромата, имеющей белый или кремовый оттенок. Такая концентрированная суспензия предназначена для борьбы со всеми видами насекомых-паразитов. 
-                            </p>
-                            <p>
-                                Чтобы сделать рабочую смесь, нужно от 1,2 мл до 6 мл суспензии размешать в одном литре воды. Для водостойкой поверхности расход – около 50 мл/м2 , а для покрытия, хорошо впитывающего влагу, – 100 мл/м2.
-                            </p>
+                        <div class="products-service__slider__wrap__item swiper-slide">
+                            <div class="products-service__slider__wrap__item__img">
+                                <img src="./assets/img/products/card-img-6.png" alt="product-img">
+                            </div>
+                            <span class="products-service__slider__wrap__item__title color-black">Ципертрин к. э.</span>
+                            <div class="products-service__slider__wrap__item__prod-descr">
+                                <span>Производитель: Нидерланды</span>
+                                <span>Вещество: 20% циперметрин, 10% малатион</span>
+                                <span>Емкость: 1000 мл.</span>
+                            </div>
+                            <div class="products-service__slider__wrap__item__text color-grey">
+                                <p>
+                                    Средство с сенсибилирующим эффектом разработано в виде концентрированной эмульсии, обладающей светло-желтым оттенком. 
+                                </p>
+                                <p>
+                                    Подходит для избавления жилых, общественных, промышленных, пищевых объектов от разных насекомых, а также для борьбы с клещами, для уничтожения личинок и гнуса, для защитной обработки полотна одежды и пр. Приготовление: нужно взять 0,4-12,5 мл концентрата на один литр воды. Примерная норма использования в естественных условиях: до 100 литров на гектар.
+                                </p>
+                            </div>
+                            <ul class="products-service__slider__wrap__item__prod-plus color-grey">Особенности препарата:
+                                <li class="color-grey">
+                                    Средство относится к третьему классу веществ, которые умеренно опасны для здоровья человека.
+                                </li>
+                                <li class="color-grey">
+                                    Работать с препаратом можно исключительно в защитной маске.
+                                </li>
+                                <li class="color-grey">
+                                    Может оказывать раздражающее действие, а также вызывать аллергические реакции.
+                                </li>
+                                <li class="color-grey">
+                                    Имеет гигиенические нормативы. Его предельная концентрация содержания в воздухе рабочей зоны не должна превышать 0,5 миллиграмм на 1м3
+                                </li>
+                                <li class="color-grey">
+                                    Сохраняет свою активность на протяжении  1 - 1,5 мес. со дня использования.
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="products-service__slider__wrap__item__prod-plus color-grey">Особенности препарата:
-                            <li class="color-grey">
-                                Не вызывает раздражения слизистых оболочек.
-                            </li>
-                            <li class="color-grey">
-                                Имеет четвертый класс безопасности
-                            </li>
-                            <li class="color-grey">
-                                Экономичен
-                            </li>
-                            <li class="color-grey">
-                                Эффективное средство против клопов, тараканов и других вредителей
-                            </li>
-                            <li class="color-grey">
-                                Препарат производства компании Bayer (Германия). Срок хранения составляет два года при условии хранения герметично закрытой емкости.
-                            </li>
-                            <li class="color-grey">
-                                Действие на протяжении 10 недель
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="products-service__slider__wrap__item">
-                        <div class="products-service__slider__wrap__item__img">
-                            <img src="./assets/img/products/card-img-3.png" alt="product-img">
-                        </div>
-                        <span class="products-service__slider__wrap__item__title color-black">Кукарача к.э.</span>
-                        <div class="products-service__slider__wrap__item__prod-descr">
-                            <span>Производитель: Россия</span>
-                            <span>Вещество: 20% циперметрин, 10% малатион</span>
-                            <span>Емкость: 1000 мл.</span>
-                        </div>
-                        <div class="products-service__slider__wrap__item__text color-grey">
-                            <p>
-                                Средство инсектицидное для борьбы с разными разновидностями и насекомых в жилых зданиях, производственных помещениях, нежилых строениях.
-                            </p>
-                            <p>
-                                Препарат изготовлен в виде концентрированной жидкости светло-желтого оттенка. Эмульсию нужно разбавлять из расчета на 1 литр воды 0,3-5 гр. препарата. Готовой смеси необходимо от 0,05 л до 0,1 л на один м2 Препарат сберегает свою активность до 5 недель.
-                            </p>
-                        </div>
-                        <ul class="products-service__slider__wrap__item__prod-plus">Особенности препарата:
-                            <li class="color-grey">
-                                Средство применяется для обработки больших площадей с небольшим количеством вредных насекомых.
-                            </li>
-                            <li class="color-grey">
-                                Наносят на места локализации клопов. Если первая обработка не дала результатов, необходимо нанести химикат во все труднодоступные зоны.
-                            </li>
-                            <li class="color-grey">
-                                Универсальное средство, которым можно уничтожать клопов, тараканов, мух, муравьев
-                            </li>
-                            <li class="color-grey">
-                                Гарантированное уничтожение клопов, тараканов, мух и других домашних вредителей.
-                            </li>
-                            <li class="color-grey">
-                                Срок годности препарата Кукарача составляет два года.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="products-service__slider__wrap__item">
-                        <div class="products__slider__wrap__item__img">
-                            <img src="./assets/img/products/card-img-4.png" alt="product-img">
-                        </div>
-                        <span class="products-service__slider__wrap__item__title color-black">Сихлор</span>
-                        <div class="products-service__slider__wrap__item__prod-descr">
-                            <span>Производитель: Нидерланды</span>
-                            <span>Вещество: 20% циперметрин, 10% малатион</span>
-                            <span>Емкость: 1000 мл.</span>
-                        </div>
-                        <div class="products-service__slider__wrap__item__text color-grey">
-                            <p>
-                                Средство инсектоакарицидное изготовлено в виде концентрированной эмульсии, имеющей прозрачную структуру и нежно-желтый оттенок. Используется в разнообразных помещениях, включая подвалы, мусоропроводы и пр. 
-                            </p>
-                            <p>
-                                Приготовление смеси: на 1 литр воды разводится от 2,5 мл. до 5 мл. средства. Расходование смеси зависит от типа поверхности и разновидности насекомого: от 0,05 л до 0,1 л. на м2. 
-                            </p>
-                        </div>
-                        <ul class="products-service__slider__wrap__item__prod-plus color-grey">Особенности препарата:
-                            <li class="color-grey">
-                                Действие направлено на уничтожение клопов, тараканов, ос, мух, муравьев и проч.
-                            </li>
-                            <li class="color-grey">
-                                Сохраняет свою активность до 5 нед.
-                            </li>
-                            <li class="color-grey">
-                                Позволяет использовать его в местах большого скопления насекомых, а также применять для проведения медицинской дезинсекции.
-                            </li>
-                            <li class="color-grey">
-                                Сихлор достаточно опасен при попадании в глаза и на слизистые оболочки. Важно ознакомиться с инструкцией по применению и предусмотреть все средства защиты.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="products-service__slider__wrap__item">
-                        <div class="products-service__slider__wrap__item__img">
-                            <img src="./assets/img/products/card-img-5.png" alt="product-img">
-                        </div>
-                        <span class="products-service__slider__wrap__item__title color-black">Фендона к.с.</span>
-                        <div class="products-service__slider__wrap__item__prod-descr">
-                            <span>Производитель: Франция</span>
-                            <span>Вещество: 1,5% альфа-циперметрин</span>
-                            <span>Емкость: 1000 мл.</span>
-                        </div>
-                        <div class="products-service__slider__wrap__item__text color-grey">
-                            <p>
-                                Препарат с сильным инсектицидным воздействием для истребления широкого спектра насекомых. Это белый концентрат эмульсии, не имеющий аромата. 
-                            </p>
-                            <p>
-                                Рекомендуется применять специалистам, у которых есть разрешение на дезинсекцию жилых, общественных, производственных и прочих объектов. Препарат разводится из расчета 10-40 гр. средства на 1 л. воды. Готовый раствор может расходоваться от 0,05 л до 0,5 л на м2. Сберегается активность после обработки около 8 недель.
-                            </p>
-                        </div>
-                        <ul class="products-service__slider__wrap__item__prod-plus color-grey">Особенности препарата:
-                            <li class="color-grey">
-                                Химикат не имеет аналогов.
-                            </li>
-                            <li class="color-grey">
-                                Полностью отсутствует неприятный, запах
-                            </li>
-                            <li class="color-grey">
-                                Действие направлено на уничтожение всех вредителей: блох, тараканов, клопов, муравьев, мух. Эффект 2 мес.
-                            </li>
-                            <li class="color-grey">
-                                Под действием активного вещества препарата насекомые теряет способность двигаться уже спустя тридцать минут.
-                            </li>
-                            <li class="color-grey">
-                                Используется для обработки любых помещений, в том числе в детских садах, школах и медицинских учреждениях.
-                            </li>
-                            <li class="color-grey">
-                                Срок годности герметично закрытой бутылки составляет три года.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="products-service__slider__wrap__item">
-                        <div class="products-service__slider__wrap__item__img">
-                            <img src="./assets/img/products/card-img-6.png" alt="product-img">
-                        </div>
-                        <span class="products-service__slider__wrap__item__title color-black">Ципертрин к. э.</span>
-                        <div class="products-service__slider__wrap__item__prod-descr">
-                            <span>Производитель: Нидерланды</span>
-                            <span>Вещество: 20% циперметрин, 10% малатион</span>
-                            <span>Емкость: 1000 мл.</span>
-                        </div>
-                        <div class="products-service__slider__wrap__item__text color-grey">
-                            <p>
-                                Средство с сенсибилирующим эффектом разработано в виде концентрированной эмульсии, обладающей светло-желтым оттенком. 
-                            </p>
-                            <p>
-                                Подходит для избавления жилых, общественных, промышленных, пищевых объектов от разных насекомых, а также для борьбы с клещами, для уничтожения личинок и гнуса, для защитной обработки полотна одежды и пр. Приготовление: нужно взять 0,4-12,5 мл концентрата на один литр воды. Примерная норма использования в естественных условиях: до 100 литров на гектар.
-                            </p>
-                        </div>
-                        <ul class="products-service__slider__wrap__item__prod-plus color-grey">Особенности препарата:
-                            <li class="color-grey">
-                                Средство относится к третьему классу веществ, которые умеренно опасны для здоровья человека.
-                            </li>
-                            <li class="color-grey">
-                                Работать с препаратом можно исключительно в защитной маске.
-                            </li>
-                            <li class="color-grey">
-                                Может оказывать раздражающее действие, а также вызывать аллергические реакции.
-                            </li>
-                            <li class="color-grey">
-                                Имеет гигиенические нормативы. Его предельная концентрация содержания в воздухе рабочей зоны не должна превышать 0,5 миллиграмм на 1м3
-                            </li>
-                            <li class="color-grey">
-                                Сохраняет свою активность на протяжении  1 - 1,5 мес. со дня использования.
-                            </li>
-                        </ul>
                     </div>
                 </div>
                 <div class="products-service__slider__next">
@@ -781,59 +782,62 @@
             </div>
         </div>
     </section>
-    <section class="video-reports">
+    <section class="video-reports sect-pad">
         <div class="container">
             <div class="title-wrap">
                 <h2 class="video-reports__title title color-yellow">видеоотчеты нашей работы</h2>
             </div>
             <div class="video-reports-service__slider">
-                <div class="video-reports-service__slider__wrap owl-carousel">
-                    <div class="video-reports-service__slider__wrap__item">
-                        <div class="video-reports-service__slider__wrap__item__img">
-                            <img src="./assets/img/video/video-poster-1.jpg" alt="video-img">
+                <div class="video-reports-service__slider__wrap swiper">
+                    <div class="swiper-wrapper">
+                        <div class="video-reports-service__slider__wrap__item swiper-slide">
+                            <a href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox data-type="html5video" data-thumb="./assets/img/video/video-poster-1.jpg">
+                                <div class="video-reports-service__slider__wrap__item__img">
+                                    <img src="./assets/img/video/video-poster-1.jpg" alt="video-img">
+                                </div>
+                                <div class="video-reports-service__slider__wrap__item__play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                                        <path d="M49.5996 48.5H5.40043C4.10182 48.5 2.85573 47.9808 1.93647 47.0554C1.01709 46.13 0.5 44.8741 0.5 43.5639V12.4361C0.5 11.1259 1.01709 9.87005 1.93647 8.94459C2.85573 8.01925 4.10182 7.5 5.40043 7.5H49.5996C50.8982 7.5 52.1443 8.01925 53.0635 8.94459C53.9829 9.87005 54.5 11.1259 54.5 12.4361V43.5639C54.5 44.8741 53.9829 46.13 53.0635 47.0554C52.1443 47.9808 50.8982 48.5 49.5996 48.5Z" fill="#212224" fill-opacity="0.35" stroke="white"/>
+                                        <path d="M20 37.6429V17.358C20 17.1185 20.0638 16.8832 20.1848 16.6761C20.3058 16.469 20.4798 16.2973 20.689 16.1786C20.8983 16.0599 21.1355 15.9983 21.3765 16C21.6174 16.0018 21.8537 16.0669 22.0611 16.1887L39.3294 26.3312C39.5337 26.4513 39.703 26.6223 39.8206 26.8272C39.9382 27.0322 40 27.2641 40 27.5C40 27.7359 39.9382 27.9678 39.8206 28.1728C39.703 28.3777 39.5337 28.5487 39.3294 28.6688L22.0611 38.8113C21.8537 38.9331 21.6176 38.9981 21.3767 39C21.1358 39.0018 20.8987 38.9403 20.6895 38.8216C20.4802 38.703 20.3062 38.5315 20.1851 38.3245C20.0641 38.1175 20.0002 37.8824 20 37.6429Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="video-reports-service__slider__wrap__item__title">Санобработка офисного помещения в Подмосковье</div>
+                            </a>
                         </div>
-                        <div class="video-reports-service__slider__wrap__item__play-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
-                                <path d="M49.5996 48.5H5.40043C4.10182 48.5 2.85573 47.9808 1.93647 47.0554C1.01709 46.13 0.5 44.8741 0.5 43.5639V12.4361C0.5 11.1259 1.01709 9.87005 1.93647 8.94459C2.85573 8.01925 4.10182 7.5 5.40043 7.5H49.5996C50.8982 7.5 52.1443 8.01925 53.0635 8.94459C53.9829 9.87005 54.5 11.1259 54.5 12.4361V43.5639C54.5 44.8741 53.9829 46.13 53.0635 47.0554C52.1443 47.9808 50.8982 48.5 49.5996 48.5Z" fill="#212224" fill-opacity="0.35" stroke="white"/>
-                                <path d="M20 37.6429V17.358C20 17.1185 20.0638 16.8832 20.1848 16.6761C20.3058 16.469 20.4798 16.2973 20.689 16.1786C20.8983 16.0599 21.1355 15.9983 21.3765 16C21.6174 16.0018 21.8537 16.0669 22.0611 16.1887L39.3294 26.3312C39.5337 26.4513 39.703 26.6223 39.8206 26.8272C39.9382 27.0322 40 27.2641 40 27.5C40 27.7359 39.9382 27.9678 39.8206 28.1728C39.703 28.3777 39.5337 28.5487 39.3294 28.6688L22.0611 38.8113C21.8537 38.9331 21.6176 38.9981 21.3767 39C21.1358 39.0018 20.8987 38.9403 20.6895 38.8216C20.4802 38.703 20.3062 38.5315 20.1851 38.3245C20.0641 38.1175 20.0002 37.8824 20 37.6429Z" fill="white"/>
-                            </svg>
+                        <div class="video-reports-service__slider__wrap__item swiper-slide">
+                            <a href="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox data-type="html5video" data-thumb="./assets/img/video/video-poster-2.jpg">
+                                <div class="video-reports-service__slider__wrap__item__img">
+                                    <img src="./assets/img/video/video-poster-2.jpg" alt="video-img">
+                                </div>
+                                <div class="video-reports-service__slider__wrap__item__play-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
+                                        <path d="M49.5996 48.5H5.40043C4.10182 48.5 2.85573 47.9808 1.93647 47.0554C1.01709 46.13 0.5 44.8741 0.5 43.5639V12.4361C0.5 11.1259 1.01709 9.87005 1.93647 8.94459C2.85573 8.01925 4.10182 7.5 5.40043 7.5H49.5996C50.8982 7.5 52.1443 8.01925 53.0635 8.94459C53.9829 9.87005 54.5 11.1259 54.5 12.4361V43.5639C54.5 44.8741 53.9829 46.13 53.0635 47.0554C52.1443 47.9808 50.8982 48.5 49.5996 48.5Z" fill="#212224" fill-opacity="0.35" stroke="white"/>
+                                        <path d="M20 37.6429V17.358C20 17.1185 20.0638 16.8832 20.1848 16.6761C20.3058 16.469 20.4798 16.2973 20.689 16.1786C20.8983 16.0599 21.1355 15.9983 21.3765 16C21.6174 16.0018 21.8537 16.0669 22.0611 16.1887L39.3294 26.3312C39.5337 26.4513 39.703 26.6223 39.8206 26.8272C39.9382 27.0322 40 27.2641 40 27.5C40 27.7359 39.9382 27.9678 39.8206 28.1728C39.703 28.3777 39.5337 28.5487 39.3294 28.6688L22.0611 38.8113C21.8537 38.9331 21.6176 38.9981 21.3767 39C21.1358 39.0018 20.8987 38.9403 20.6895 38.8216C20.4802 38.703 20.3062 38.5315 20.1851 38.3245C20.0641 38.1175 20.0002 37.8824 20 37.6429Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="video-reports-service__slider__wrap__item__title">Дезинфекция районной больницы </div>
+                            </a>
                         </div>
-                        <div class="video-reports-service__slider__wrap__item__title">Санобработка офисного помещения в Подмосковье</div>
-                    </div>
-                    <div class="video-reports-service__slider__wrap__item">
-                        <div class="video-reports-service__slider__wrap__item__img">
-                            <img src="./assets/img/video/video-poster-2.jpg" alt="video-img">
+                        <div class="video-reports-service__slider__wrap__item swiper-slide">
+                            <a href="./assets/img/video/video-poster-3.jpg" data-fancybox="gallery-foto-reports">
+                                <div class="video-reports-service__slider__wrap__item__foto">
+                                    <img src="./assets/img/video/video-poster-3.jpg" alt="work-foto-img">
+                                </div>                            
+                            </a>
                         </div>
-                        <div class="video-reports-service__slider__wrap__item__play-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
-                                <path d="M49.5996 48.5H5.40043C4.10182 48.5 2.85573 47.9808 1.93647 47.0554C1.01709 46.13 0.5 44.8741 0.5 43.5639V12.4361C0.5 11.1259 1.01709 9.87005 1.93647 8.94459C2.85573 8.01925 4.10182 7.5 5.40043 7.5H49.5996C50.8982 7.5 52.1443 8.01925 53.0635 8.94459C53.9829 9.87005 54.5 11.1259 54.5 12.4361V43.5639C54.5 44.8741 53.9829 46.13 53.0635 47.0554C52.1443 47.9808 50.8982 48.5 49.5996 48.5Z" fill="#212224" fill-opacity="0.35" stroke="white"/>
-                                <path d="M20 37.6429V17.358C20 17.1185 20.0638 16.8832 20.1848 16.6761C20.3058 16.469 20.4798 16.2973 20.689 16.1786C20.8983 16.0599 21.1355 15.9983 21.3765 16C21.6174 16.0018 21.8537 16.0669 22.0611 16.1887L39.3294 26.3312C39.5337 26.4513 39.703 26.6223 39.8206 26.8272C39.9382 27.0322 40 27.2641 40 27.5C40 27.7359 39.9382 27.9678 39.8206 28.1728C39.703 28.3777 39.5337 28.5487 39.3294 28.6688L22.0611 38.8113C21.8537 38.9331 21.6176 38.9981 21.3767 39C21.1358 39.0018 20.8987 38.9403 20.6895 38.8216C20.4802 38.703 20.3062 38.5315 20.1851 38.3245C20.0641 38.1175 20.0002 37.8824 20 37.6429Z" fill="white"/>
-                            </svg>
+                        <div class="video-reports-service__slider__wrap__item swiper-slide">
+                            <a href="./assets/img/video/video-poster-4.jpg" data-fancybox="gallery-foto-reports">
+                                <div class="video-reports-service__slider__wrap__item__foto">
+                                    <img src="./assets/img/video/video-poster-4.jpg" alt="work-foto-img">
+                                </div>                            
+                            </a>
                         </div>
-                        <div class="video-reports-service__slider__wrap__item__title">Дезинфекция районной больницы </div>
-                    </div>
-                    <div class="video-reports-service__slider__wrap__item">
-                        <div class="video-reports-service__slider__wrap__item__foto">
-                            <picture>
-                                <source srcset="./assets/img/video/video-poster-3.webp" type="image/webp">
-                                <img src="./assets/img/video/video-poster-3.jpg" alt="work-foto-img">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="video-reports-service__slider__wrap__item">
-                        <div class="video-reports-service__slider__wrap__item__foto">
-                            <picture>
-                                <source srcset="./assets/img/video/video-poster-4.webp" type="image/webp">
-                                <img src="./assets/img/video/video-poster-4.jpg" alt="work-foto-img">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="video-reports-service__slider__wrap__item">
-                        <div class="video-reports-service__slider__wrap__item__foto">
-                            <picture>
-                                <source srcset="./assets/img/video/video-poster-5.webp" type="image/webp">
-                                <img src="./assets/img/video/video-poster-5.jpg" alt="work-foto-img">
-                            </picture>
+                        <div class="video-reports-service__slider__wrap__item swiper-slide">
+                            <a href="./assets/img/video/video-poster-5.jpg" data-fancybox="gallery-foto-reports">
+                                <div class="video-reports-service__slider__wrap__item__foto">
+                                    <img src="./assets/img/video/video-poster-5.jpg" alt="work-foto-img">
+                                </div>                            
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -852,21 +856,28 @@
                 <div class="video-reports-service__slider__dots"></div>
             </div>
             <div class="video-reports__foto-slider">
-                <div class="video-reports__foto-slider__wrap owl-carousel">
-                    <div class="video-reports__foto-slider__wrap__item">
-                        <div class="video-reports__foto-slider__wrap__item__img">
-                            <picture>
-                                <source srcset="./assets/img/video/foto-img-1.webp" type="image/webp">
-                                <img src="./assets/img/video/foto-img-1.jpg" alt="work-foto-img">
-                            </picture>
+                <div class="video-reports__foto-slider__wrap swiper">
+                    <div class="swiper-wrapper">
+                        <div class="video-reports__foto-slider__wrap__item swiper-slide">
+                            <a href="./assets/img/video/foto-img-1.jpg" data-fancybox="gallery-foto-slider">
+                                <div class="video-reports-service__slider__wrap__item__foto">
+                                    <img src="./assets/img/video/foto-img-1.jpg" alt="work-foto-img">
+                                </div>                            
+                            </a>
                         </div>
-                    </div>
-                    <div class="video-reports__foto-slider__wrap__item">
-                        <div class="video-reports__foto-slider__wrap__item__img">
-                            <picture>
-                                <source srcset="./assets/img/video/foto-img-2.webp" type="image/webp">
-                                <img src="./assets/img/video/foto-img-2.jpg" alt="work-foto-img">
-                            </picture>
+                        <div class="video-reports__foto-slider__wrap__item swiper-slide">
+                            <a href="./assets/img/video/foto-img-2.jpg" data-fancybox="gallery-foto-slider">
+                                <div class="video-reports-service__slider__wrap__item__foto">
+                                    <img src="./assets/img/video/foto-img-2.jpg" alt="work-foto-img">
+                                </div>                            
+                            </a>
+                        </div>
+                        <div class="video-reports__foto-slider__wrap__item swiper-slide">
+                            <a href="./assets/img/video/foto-img-1.jpg" data-fancybox="gallery-foto-slider">
+                                <div class="video-reports-service__slider__wrap__item__foto">
+                                    <img src="./assets/img/video/foto-img-1.jpg" alt="work-foto-img">
+                                </div>                            
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -905,73 +916,73 @@
         <div class="comments__slider">
             <div class="comments__slider__wrap owl-carousel">
                 <div class="comments__slider__wrap__item">
-                    <div class="comments__slider__wrap__item__header">
-                        <div class="comments__slider__wrap__item__header__img">
-                            <img src="./assets/icon/comment/avatar-1.png" alt="user-icon">
+                        <div class="comments__slider__wrap__item__header">
+                            <div class="comments__slider__wrap__item__header__img">
+                                <img src="./assets/icon/comment/avatar-1.png" alt="user-icon">
+                            </div>
+                            <div class="comments__slider__wrap__item__header__user-info">
+                                <span class="comments__slider__wrap__item__header__user-info__name color-black">
+                                    Мария М.
+                                </span>
+                                <span class="comments__slider__wrap__item__header__user-info__job color-grey">
+                                    Дезинсекция квартиры
+                                </span>
+                            </div>
                         </div>
-                        <div class="comments__slider__wrap__item__header__user-info">
-                            <span class="comments__slider__wrap__item__header__user-info__name color-black">
-                                Мария М.
-                            </span>
-                            <span class="comments__slider__wrap__item__header__user-info__job color-grey">
-                                Дезинсекция квартиры
-                            </span>
+                        <div class="comments__slider__wrap__item__text color-grey">
+                            <p>
+                                Недавно заметила укусы на руках, оказалось покусали клопы. Я их заметила после того как стала осматривать квартиру.
+                            </p>
+                            <p>
+                                Облазила все форумы в интернете, но все же не рискнула бороться с ними самостоятельно народными средствами или пшыкалками разными, так как много людей писали, что все это не помогает. 
+                            </p>
+                            <p>
+                                Обратилась в службу Корпорация Дезинсекции. Ребята приехали все обработали, слава богу вывели эту нечисть! Спасибо огромное, особенно специалисту Владимиру.
+                            </p>
                         </div>
-                    </div>
-                    <div class="comments__slider__wrap__item__text color-grey">
-                        <p>
-                            Недавно заметила укусы на руках, оказалось покусали клопы. Я их заметила после того как стала осматривать квартиру.
-                        </p>
-                        <p>
-                            Облазила все форумы в интернете, но все же не рискнула бороться с ними самостоятельно народными средствами или пшыкалками разными, так как много людей писали, что все это не помогает. 
-                        </p>
-                        <p>
-                            Обратилась в службу Корпорация Дезинсекции. Ребята приехали все обработали, слава богу вывели эту нечисть! Спасибо огромное, особенно специалисту Владимиру.
-                        </p>
-                    </div>
                 </div>
                 <div class="comments__slider__wrap__item">
-                    <div class="comments__slider__wrap__item__header">
-                        <div class="comments__slider__wrap__item__header__img">
-                            <img src="./assets/icon/comment/avatar-2.png" alt="user-icon">
+                        <div class="comments__slider__wrap__item__header">
+                            <div class="comments__slider__wrap__item__header__img">
+                                <img src="./assets/icon/comment/avatar-2.png" alt="user-icon">
+                            </div>
+                            <div class="comments__slider__wrap__item__header__user-info">
+                                <span class="comments__slider__wrap__item__header__user-info__name color-black">
+                                    Константин Ф.
+                                </span>
+                                <span class="comments__slider__wrap__item__header__user-info__job color-grey">
+                                    Дезинсекция квартиры
+                                </span>
+                            </div>
                         </div>
-                        <div class="comments__slider__wrap__item__header__user-info">
-                            <span class="comments__slider__wrap__item__header__user-info__name color-black">
-                                Константин Ф.
-                            </span>
-                            <span class="comments__slider__wrap__item__header__user-info__job color-grey">
-                                Дезинсекция квартиры
-                            </span>
+                        <div class="comments__slider__wrap__item__text color-grey">
+                            <p>
+                                Долго пытался справиться с тараканами в офисе. Что только не перепробовал, все напрасно. Теперь точно могу сказать, что неблагодарное это занятие. 
+                            </p>
+                            <p>
+                                Хотите сэкономить деньги и нервы обращайтесь в Корпорацию Дезинсекции.
+                            </p>
                         </div>
-                    </div>
-                    <div class="comments__slider__wrap__item__text color-grey">
-                        <p>
-                            Долго пытался справиться с тараканами в офисе. Что только не перепробовал, все напрасно. Теперь точно могу сказать, что неблагодарное это занятие. 
-                        </p>
-                        <p>
-                            Хотите сэкономить деньги и нервы обращайтесь в Корпорацию Дезинсекции.
-                        </p>
-                    </div>
                 </div>
                 <div class="comments__slider__wrap__item">
-                    <div class="comments__slider__wrap__item__header">
-                        <div class="comments__slider__wrap__item__header__img">
-                            <img src="./assets/icon/comment/avatar-3.png" alt="user-icon">
+                        <div class="comments__slider__wrap__item__header">
+                            <div class="comments__slider__wrap__item__header__img">
+                                <img src="./assets/icon/comment/avatar-3.png" alt="user-icon">
+                            </div>
+                            <div class="comments__slider__wrap__item__header__user-info">
+                                <span class="comments__slider__wrap__item__header__user-info__name color-black">
+                                    Мария М.
+                                </span>
+                                <span class="comments__slider__wrap__item__header__user-info__job color-grey">
+                                    Дезинсекция квартиры
+                                </span>
+                            </div>
                         </div>
-                        <div class="comments__slider__wrap__item__header__user-info">
-                            <span class="comments__slider__wrap__item__header__user-info__name color-black">
-                                Мария М.
-                            </span>
-                            <span class="comments__slider__wrap__item__header__user-info__job color-grey">
-                                Дезинсекция квартиры
-                            </span>
+                        <div class="comments__slider__wrap__item__text color-grey">
+                            <p>
+                                Недавно заметила укусы на руках, оказалось покусали клопы. Я их заметила после того как стала осматривать квартиру. Облазила все форумы в интернете, но все же не рискнула бороться с ними самостоятельно народными средствами или пшыкалками разными, так как много людей писали, что все это не помогает. Обратилась в службу Корпорация Дезинсекции. Ребята приехали все обработали, слава богу вывели эту нечисть! Спасибо огромное, особенно специалисту Владимиру.
+                            </p>
                         </div>
-                    </div>
-                    <div class="comments__slider__wrap__item__text color-grey">
-                        <p>
-                            Недавно заметила укусы на руках, оказалось покусали клопы. Я их заметила после того как стала осматривать квартиру. Облазила все форумы в интернете, но все же не рискнула бороться с ними самостоятельно народными средствами или пшыкалками разными, так как много людей писали, что все это не помогает. Обратилась в службу Корпорация Дезинсекции. Ребята приехали все обработали, слава богу вывели эту нечисть! Спасибо огромное, особенно специалисту Владимиру.
-                        </p>
-                    </div>
                 </div>
             </div>
             <div class="comments__slider__next">
@@ -983,7 +994,7 @@
             <div class="comments__slider__dots"></div>
         </div>
     </section>
-    <section class="personal">
+    <section class="personal sect-pad">
         <div class="container">
             <div class="title-wrap">
                 <h2 class="personal__title title color-yellow">Специалисты</h2>
@@ -998,72 +1009,74 @@
                         <path d="M29 29.25C29.4142 29.25 29.75 29.5858 29.75 30C29.75 30.4142 29.4142 30.75 29 30.75V29.25ZM10.4697 30.5303C10.1768 30.2374 10.1768 29.7626 10.4697 29.4697L15.2426 24.6967C15.5355 24.4038 16.0104 24.4038 16.3033 24.6967C16.5962 24.9896 16.5962 25.4645 16.3033 25.7574L12.0607 30L16.3033 34.2426C16.5962 34.5355 16.5962 35.0104 16.3033 35.3033C16.0104 35.5962 15.5355 35.5962 15.2426 35.3033L10.4697 30.5303ZM29 30.75H11V29.25H29V30.75Z" fill="#F5C233"/>
                     </svg>
                 </div>
-                <div class="personal__slider__wrap owl-carousel">
-                    <div class="personal__slider__wrap__item">
-                        <div class="personal__slider__wrap__item__img">
-                            <img src="./assets/img/personal/person-1.png" alt="person-img">
+                <div class="personal__slider__wrap swiper">
+                    <div class="swiper-wrapper">
+                        <div class="personal__slider__wrap__item swiper-slide">
+                            <div class="personal__slider__wrap__item__img">
+                                <img src="./assets/img/personal/person-1.png" alt="person-img">
+                            </div>
+                            <span class="personal__slider__wrap__item__title color-black">Бережненко Леонид Владимирович</span>
+                            <span class="personal__slider__wrap__item__subtitle color-grey">Специализация: дезинфектор</span>
+                            <div class="personal__slider__wrap__item__text color-grey">
+                                В 2016-2017 годах прошел курс дополнительного профессионального обучения в частном негосударственном научно-образовательном учреждении «Институт пест-менеджмента» по программе «Дезинфекция, дезинсекция, дератизация».Специалист имеет опыт работы в сфере дезинфекции более 9 лет, его квалификация позволяет проводить обработку даже в самых  труднодоступных местах.
+                            </div>
+                            <a href="#" class="personal__slider__wrap__item__btn btn color-grey">Пригласить специалиста</a>
                         </div>
-                        <span class="personal__slider__wrap__item__title color-black">Бережненко Леонид Владимирович</span>
-                        <span class="personal__slider__wrap__item__subtitle color-grey">Специализация: дезинфектор</span>
-                        <div class="personal__slider__wrap__item__text color-grey">
-                            В 2016-2017 годах прошел курс дополнительного профессионального обучения в частном негосударственном научно-образовательном учреждении «Институт пест-менеджмента» по программе «Дезинфекция, дезинсекция, дератизация».Специалист имеет опыт работы в сфере дезинфекции более 9 лет, его квалификация позволяет проводить обработку даже в самых  труднодоступных местах.
+                        <div class="personal__slider__wrap__item swiper-slide">
+                            <div class="personal__slider__wrap__item__img">
+                                <img src="./assets/img/personal/person-2.png" alt="person-img">
+                            </div>
+                            <span class="personal__slider__wrap__item__title color-black">Волжанин Александр Сергеевич</span>
+                            <span class="personal__slider__wrap__item__subtitle color-grey">Специализация: дезинфектор</span>
+                            <div class="personal__slider__wrap__item__text color-grey">
+                                В 2015-2016 годах получил профильное образование в Негосударственном частном научно-образовательном учреждении «Институт пест-менеджмента» по направлению «Дезинфекция, дезинсекция, дератизация». Опыт работы дезинфектора превышает 10 лет, за это время была отработана методика обработки, которая гарантированно избавит от вредителей, плесени, борщевика.
+                            </div>
+                            <a href="#" class="personal__slider__wrap__item__btn btn color-grey">Пригласить специалиста</a>
                         </div>
-                        <a href="#" class="personal__slider__wrap__item__btn btn color-grey">Пригласить специалиста</a>
-                    </div>
-                    <div class="personal__slider__wrap__item">
-                        <div class="personal__slider__wrap__item__img">
-                            <img src="./assets/img/personal/person-2.png" alt="person-img">
+                        <div class="personal__slider__wrap__item swiper-slide">
+                            <div class="personal__slider__wrap__item__img">
+                                <img src="./assets/img/personal/person-3.png" alt="person-img">
+                            </div>
+                            <span class="personal__slider__wrap__item__title color-black">Егоров Владимир Петрович</span>
+                            <span class="personal__slider__wrap__item__subtitle color-grey">Специализация: дезинфектор</span>
+                            <div class="personal__slider__wrap__item__text color-grey">
+                                Дезинфектор имеет опыт более 7 лет в сферах дезинфекции, дезинсекции, дератизации, с успехом проводит акарицидные и гербицидные обработки. Профессиональное оборудование позволяет в максимально сжатые сроки обработать любые помещения, от квартир и домов до производственных и общественных помещений.
+                            </div>
+                            <a href="#" class="personal__slider__wrap__item__btn btn color-grey">Пригласить специалиста</a>
                         </div>
-                        <span class="personal__slider__wrap__item__title color-black">Волжанин Александр Сергеевич</span>
-                        <span class="personal__slider__wrap__item__subtitle color-grey">Специализация: дезинфектор</span>
-                        <div class="personal__slider__wrap__item__text color-grey">
-                            В 2015-2016 годах получил профильное образование в Негосударственном частном научно-образовательном учреждении «Институт пест-менеджмента» по направлению «Дезинфекция, дезинсекция, дератизация». Опыт работы дезинфектора превышает 10 лет, за это время была отработана методика обработки, которая гарантированно избавит от вредителей, плесени, борщевика.
+                        <div class="personal__slider__wrap__item swiper-slide">
+                            <div class="personal__slider__wrap__item__img">
+                                <img src="./assets/img/personal/person-4.png" alt="person-img">
+                            </div>
+                            <span class="personal__slider__wrap__item__title color-black">Иванов Аркадий Петрович</span>
+                            <span class="personal__slider__wrap__item__subtitle color-grey">Специализация: дезинфектор</span>
+                            <div class="personal__slider__wrap__item__text color-grey">
+                                В 2016-2017 годах прошел курс дополнительного профессионального обучения в частном негосударственном научно-образовательном учреждении «Институт пест-менеджмента» по программе «Дезинфекция, дезинсекция, дератизация».Специалист имеет опыт работы в сфере дезинфекции более 9 лет, его квалификация позволяет проводить обработку в труднодоступных местах.
+                            </div>
+                            <a href="#" class="personal__slider__wrap__item__btn btn color-grey">Пригласить специалиста</a>
                         </div>
-                        <a href="#" class="personal__slider__wrap__item__btn btn color-grey">Пригласить специалиста</a>
-                    </div>
-                    <div class="personal__slider__wrap__item">
-                        <div class="personal__slider__wrap__item__img">
-                            <img src="./assets/img/personal/person-3.png" alt="person-img">
+                        <div class="personal__slider__wrap__item swiper-slide">
+                            <div class="personal__slider__wrap__item__img">
+                                <img src="./assets/img/personal/person-5.png" alt="person-img">
+                            </div>
+                            <span class="personal__slider__wrap__item__title color-black">Самарин Владимир Алексеевич</span>
+                            <span class="personal__slider__wrap__item__subtitle color-grey">Специализация: дезинфектор</span>
+                            <div class="personal__slider__wrap__item__text color-grey">
+                                В 2015-2016 годах получил профильное образование в Негосударственном частном научно-образовательном учреждении «Институт пест-менеджмента» по направлению «Дезинфекция, дезинсекция, дератизация». Опыт работы дезинфектора превышает 10 лет, за это время была отработана методика обработки, которая гарантированно избавит от вредителей, плесени, борщевика.
+                            </div>
+                            <a href="#" class="personal__slider__wrap__item__btn btn color-grey">Пригласить специалиста</a>
                         </div>
-                        <span class="personal__slider__wrap__item__title color-black">Егоров Владимир Петрович</span>
-                        <span class="personal__slider__wrap__item__subtitle color-grey">Специализация: дезинфектор</span>
-                        <div class="personal__slider__wrap__item__text color-grey">
-                            Дезинфектор имеет опыт более 7 лет в сферах дезинфекции, дезинсекции, дератизации, с успехом проводит акарицидные и гербицидные обработки. Профессиональное оборудование позволяет в максимально сжатые сроки обработать любые помещения, от квартир и домов до производственных и общественных помещений.
+                        <div class="personal__slider__wrap__item swiper-slide">
+                            <div class="personal__slider__wrap__item__img">
+                                <img src="./assets/img/personal/person-6.png" alt="person-img">
+                            </div>
+                            <span class="personal__slider__wrap__item__title color-black">Самарин Владимир Алексеевич</span>
+                            <span class="personal__slider__wrap__item__subtitle color-grey">Специализация: дезинфектор</span>
+                            <div class="personal__slider__wrap__item__text color-grey">
+                                В 2015-2016 годах получил профильное образование в Негосударственном частном научно-образовательном учреждении «Институт пест-менеджмента» по направлению «Дезинфекция, дезинсекция, дератизация». Опыт работы дезинфектора превышает 10 лет, за это время была отработана методика обработки, которая гарантированно избавит от вредителей, плесени, борщевика.
+                            </div>
+                            <a href="#" class="personal__slider__wrap__item__btn btn color-grey">Пригласить специалиста</a>
                         </div>
-                        <a href="#" class="personal__slider__wrap__item__btn btn color-grey">Пригласить специалиста</a>
-                    </div>
-                    <div class="personal__slider__wrap__item">
-                        <div class="personal__slider__wrap__item__img">
-                            <img src="./assets/img/personal/person-4.png" alt="person-img">
-                        </div>
-                        <span class="personal__slider__wrap__item__title color-black">Иванов Аркадий Петрович</span>
-                        <span class="personal__slider__wrap__item__subtitle color-grey">Специализация: дезинфектор</span>
-                        <div class="personal__slider__wrap__item__text color-grey">
-                            В 2016-2017 годах прошел курс дополнительного профессионального обучения в частном негосударственном научно-образовательном учреждении «Институт пест-менеджмента» по программе «Дезинфекция, дезинсекция, дератизация».Специалист имеет опыт работы в сфере дезинфекции более 9 лет, его квалификация позволяет проводить обработку в труднодоступных местах.
-                        </div>
-                        <a href="#" class="personal__slider__wrap__item__btn btn color-grey">Пригласить специалиста</a>
-                    </div>
-                    <div class="personal__slider__wrap__item">
-                        <div class="personal__slider__wrap__item__img">
-                            <img src="./assets/img/personal/person-5.png" alt="person-img">
-                        </div>
-                        <span class="personal__slider__wrap__item__title color-black">Самарин Владимир Алексеевич</span>
-                        <span class="personal__slider__wrap__item__subtitle color-grey">Специализация: дезинфектор</span>
-                        <div class="personal__slider__wrap__item__text color-grey">
-                            В 2015-2016 годах получил профильное образование в Негосударственном частном научно-образовательном учреждении «Институт пест-менеджмента» по направлению «Дезинфекция, дезинсекция, дератизация». Опыт работы дезинфектора превышает 10 лет, за это время была отработана методика обработки, которая гарантированно избавит от вредителей, плесени, борщевика.
-                        </div>
-                        <a href="#" class="personal__slider__wrap__item__btn btn color-grey">Пригласить специалиста</a>
-                    </div>
-                    <div class="personal__slider__wrap__item">
-                        <div class="personal__slider__wrap__item__img">
-                            <img src="./assets/img/personal/person-6.png" alt="person-img">
-                        </div>
-                        <span class="personal__slider__wrap__item__title color-black">Самарин Владимир Алексеевич</span>
-                        <span class="personal__slider__wrap__item__subtitle color-grey">Специализация: дезинфектор</span>
-                        <div class="personal__slider__wrap__item__text color-grey">
-                            В 2015-2016 годах получил профильное образование в Негосударственном частном научно-образовательном учреждении «Институт пест-менеджмента» по направлению «Дезинфекция, дезинсекция, дератизация». Опыт работы дезинфектора превышает 10 лет, за это время была отработана методика обработки, которая гарантированно избавит от вредителей, плесени, борщевика.
-                        </div>
-                        <a href="#" class="personal__slider__wrap__item__btn btn color-grey">Пригласить специалиста</a>
                     </div>
                 </div>
                 <div class="personal__slider__next">
@@ -1777,7 +1790,9 @@
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
     crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./assets/js/service-page.js"></script>
 </body>
 </html>
