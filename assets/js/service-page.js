@@ -164,54 +164,39 @@ window.addEventListener("DOMContentLoaded", () => {
     
     };
 
-    function dotsLength(dotsWrapSel, slidesSel, blockClass){
-        const dotsWrap = document.querySelector(dotsWrapSel),
-            slides = document.querySelectorAll(slidesSel);
-
-        if (slides.length > dotsWrap.querySelectorAll("div").length){
-            let length = dotsWrap.querySelectorAll("div").length;
-            while(length < slides.length){
-                const div = document.createElement("div");
-                div.classList.add(blockClass);
-                div.style.marginLeft = "8px";
-                dotsWrap.appendChild(div);
-                length++;
-            }
+    function telMask(){
+        const telInputs = document.querySelectorAll('[type="tel"]')
+    
+        var maskOptions = {
+          mask: '+{7} 000 000-00-00',
         }
-    }
-
-    function sliderMobil(slidesSel, dotsSel, slideActiveClass, dotActivClass){
-        const slides = document.querySelectorAll(slidesSel),
-            dots = document.querySelectorAll(dotsSel);
-
-            function showSlide(i = 0){
-        
-                slides.forEach(slide => {
-                    slide.style.display = "none";
-                    slide.classList.remove("swiper-slide")
-                    slide.classList.remove(slideActiveClass);
-                })
-        
-                dots.forEach(dot => {
-                    dot.classList.remove(dotActivClass);
-                })
-        
-                slides[i].style.display = "block";
-                slides[i].classList.add(slideActiveClass);
-                dots[i].classList.add(dotActivClass);
-            }
-        
-            showSlide(0);
-        
-            dots.forEach((dot, i) => {
-                dot.addEventListener("click", () => {
-                    showSlide(i);
-                })
-            })
-    }
+      
+        telInputs.forEach((input) => {
+          const imask = IMask(input, maskOptions)
+      
+          // https://github.com/uNmAnNeR/imaskjs/issues/152#issuecomment-462054778
+          input.addEventListener(
+            'focus',
+            function () {
+              imask.updateOptions({ lazy: false })
+            },
+            true
+          )
+          input.addEventListener(
+            'blur',
+            function () {
+              imask.updateOptions({ lazy: true })
+            },
+            true
+          )
+        })
+    };
+    
     
     modal(".phone__link", ".modal", ".modal__wrap__decor__close-btn");
     modal(".main__btn", ".modal", ".modal__wrap__decor__close-btn");
+
+    telMask();
     
     serviceMenu(".services", ".services-menu", ".services-menu__close");
 
@@ -221,35 +206,24 @@ window.addEventListener("DOMContentLoaded", () => {
     questions(".questions__wrap__item-wrap__item__question__title", ".questions__wrap__item-wrap__item__question__title__plus", "questions__wrap__item-wrap__item__question__title__plus__plus-rotate");
     tabs(".questions__wrap__tabs", ".questions__wrap__tabs__item", ".questions__wrap__item-wrap__item", "questions__wrap__tabs__item__active");
 
-
-    if (window.screen.width <= 576){
-        dotsLength(".products-service__slider__dots",".products-service__slider__wrap__item", "products-service__slider__dots__item");
-        sliderMobil(".products-service__slider__wrap__item", ".products-service__slider__dots__item", "show-anim", "dot-active");
-
-        dotsLength(".video-reports-service__slider__dots",".video-reports-service__slider__wrap__item", "video-reports-service__slider__dots__item");
-        sliderMobil(".video-reports-service__slider__wrap__item", ".video-reports-service__slider__dots__item", "show-anim", "dot-active");
-
-        dotsLength(".comments__content__slider__dots",".comments__content__slider__wrap__item", "comments__content__slider__dots__item");
-        sliderMobil(".comments__content__slider__wrap__item", ".comments__content__slider__dots__item", "show-anim", "dot-active");
-
-    }
-
     const prevProductSl = document.querySelector(".products-service__slider__prev"),
         nextproductSl = document.querySelector(".products-service__slider__next");
 
     prevProductSl.classList.add("arrow-disabled");
 
     const servicePageProducts = new Swiper('.products-service__slider__wrap', {
-        // Optional parameters,
         slidesPerView: 2,
         direction: 'horizontal',
         loop: false,
         cssMode: true,
     
-        // Navigation arrows
         navigation: {
         nextEl: '.products-service__slider__next',
         prevEl: '.products-service__slider__prev',
+        },
+        pagination:{
+            el: '.products-service__slider__dots',
+            clickable: true
         },
         breakpoints: {
             352: {
@@ -268,7 +242,6 @@ window.addEventListener("DOMContentLoaded", () => {
         servicePageProductsCB(this);
 
     });
-    // data.passedParams.slidesPerView - кол-во слайдов
     function servicePageProductsCB(data){
         if(data.activeIndex > 0){
             prevProductSl.classList.add("arrow-active");
@@ -291,16 +264,18 @@ window.addEventListener("DOMContentLoaded", () => {
     prevVideoSl.classList.add("arrow-disabled");
 
     const servicePageVideo = new Swiper('.video-reports-service__slider__wrap', {
-        // Optional parameters,
         slidesPerView: 2,
         direction: 'horizontal',
         loop: false,
         cssMode: true,
 
-        // Navigation arrows
         navigation: {
         nextEl: '.video-reports-service__slider__next',
         prevEl: '.video-reports-service__slider__prev',
+        },
+        pagination:{
+            el: '.video-reports-service__slider__dots',
+            clickable: true
         },
         breakpoints: {
             352: {
@@ -319,7 +294,6 @@ window.addEventListener("DOMContentLoaded", () => {
         servicePageVideoCB(this);
 
     });
-    // data.passedParams.slidesPerView - кол-во слайдов
     function servicePageVideoCB(data){
         if(data.activeIndex > 0){
             prevVideoSl.classList.add("arrow-active");
@@ -343,13 +317,11 @@ window.addEventListener("DOMContentLoaded", () => {
     prevFotoSl.classList.add("arrow-disabled");
 
     const servicePageFoto = new Swiper('.video-reports__foto-slider__wrap', {
-        // Optional parameters,
         slidesPerView: 2,
         direction: 'horizontal',
         loop: false,
         cssMode: true,
 
-        // Navigation arrows
         navigation: {
         nextEl: '.video-reports__foto-slider__next',
         prevEl: '.video-reports__foto-slider__prev',
@@ -371,7 +343,6 @@ window.addEventListener("DOMContentLoaded", () => {
         servicePageFotoCB(this);
 
     });
-    // data.passedParams.slidesPerView - кол-во слайдов
     function servicePageFotoCB(data){
         if(data.activeIndex > 0){
             prevFotoSl.classList.add("arrow-active");
@@ -388,25 +359,24 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-
-    // comments slider
-
     const prevCommentServiceSl = document.querySelector(".comments__content__slider__prev"),
         nextCommentServiceSl = document.querySelector(".comments__content__slider__next");
 
     prevCommentServiceSl.classList.add("arrow-disabled");
 
     const serviceCommentSl = new Swiper('.comments__content__slider__wrap', {
-        // Optional parameters,
         slidesPerView: 3,
         direction: 'horizontal',
         loop: false,
         cssMode: true,
 
-        // Navigation arrows
         navigation: {
         nextEl: '.comments__content__slider__next',
         prevEl: '.comments__content__slider__prev',
+        },
+        pagination:{
+            el: '.comments__content__slider__dots',
+            clickable: true
         },
         breakpoints: {
             352: {
@@ -425,7 +395,6 @@ window.addEventListener("DOMContentLoaded", () => {
         serviceCommentSlCB(this);
 
     });
-    // data.passedParams.slidesPerView - кол-во слайдов
     function serviceCommentSlCB(data){
         if(data.activeIndex > 0){
             prevCommentServiceSl.classList.add("arrow-active");
@@ -449,13 +418,11 @@ window.addEventListener("DOMContentLoaded", () => {
     prevPersonalSl.classList.add("arrow-disabled");
 
     const servicePersonal = new Swiper('.personal__slider__wrap', {
-        // Optional parameters,
         slidesPerView: 2,
         direction: 'horizontal',
         loop: false,
         cssMode: true,
 
-        // Navigation arrows
         navigation: {
         nextEl: '.personal__slider__next',
         prevEl: '.personal__slider__prev',
@@ -478,7 +445,6 @@ window.addEventListener("DOMContentLoaded", () => {
         servicePersonalCB(this);
 
     });
-    // data.passedParams.slidesPerView - кол-во слайдов
     function servicePersonalCB(data){
         if(data.activeIndex > 0){
             prevPersonalSl.classList.add("arrow-active");

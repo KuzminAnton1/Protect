@@ -62,6 +62,34 @@ window.addEventListener("DOMContentLoaded", () => {
             document.body.style.overflowY = "";
         })
     }
+    function telMask(){
+        const telInputs = document.querySelectorAll('[type="tel"]')
+    
+        var maskOptions = {
+          mask: '+{7} 000 000-00-00',
+        }
+      
+        telInputs.forEach((input) => {
+          const imask = IMask(input, maskOptions)
+      
+          // https://github.com/uNmAnNeR/imaskjs/issues/152#issuecomment-462054778
+          input.addEventListener(
+            'focus',
+            function () {
+              imask.updateOptions({ lazy: false })
+            },
+            true
+          )
+          input.addEventListener(
+            'blur',
+            function () {
+              imask.updateOptions({ lazy: true })
+            },
+            true
+          )
+        })
+    }
     modal(".phone__link", ".modal", ".modal__wrap__decor__close-btn");
     serviceMenu(".services", ".services-menu", ".services-menu__close");
+    telMask();
 })
