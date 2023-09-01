@@ -229,6 +229,9 @@ window.addEventListener("DOMContentLoaded", () => {
         dotsLength(".video-reports-service__slider__dots",".video-reports-service__slider__wrap__item", "video-reports-service__slider__dots__item");
         sliderMobil(".video-reports-service__slider__wrap__item", ".video-reports-service__slider__dots__item", "show-anim", "dot-active");
 
+        dotsLength(".comments__content__slider__dots",".comments__content__slider__wrap__item", "comments__content__slider__dots__item");
+        sliderMobil(".comments__content__slider__wrap__item", ".comments__content__slider__dots__item", "show-anim", "dot-active");
+
     }
 
     const prevProductSl = document.querySelector(".products-service__slider__prev"),
@@ -386,44 +389,58 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    $(document).ready(function(){
-        let sliderCommentsSer = $(".comments__slider__wrap");
-                        
-        sliderCommentsSer.owlCarousel({
-            loop: true,
-            dotsContainer: ".comments__slider__dots",
-            dots: true,
-            autoWidth: true,
-            responsive: {
-                0:{
-                    autoWidth: true,
-                    dots: true
-                },
-                567:{
-                    items: 1,
-                },
-                768:{
-                    items: 1.2,
-                    margin: 20
-                },
-                1140:{
-                    items: 1.5,
-                    margin: 20,
-                },
-                1361:{
-                    items: 2.5,
-                    autoWidth: true,
-                    margin: 20,
-                }
+    // comments slider
+
+    const prevCommentServiceSl = document.querySelector(".comments__content__slider__prev"),
+        nextCommentServiceSl = document.querySelector(".comments__content__slider__next");
+
+    prevCommentServiceSl.classList.add("arrow-disabled");
+
+    const serviceCommentSl = new Swiper('.comments__content__slider__wrap', {
+        // Optional parameters,
+        slidesPerView: 3,
+        direction: 'horizontal',
+        loop: false,
+        cssMode: true,
+
+        // Navigation arrows
+        navigation: {
+        nextEl: '.comments__content__slider__next',
+        prevEl: '.comments__content__slider__prev',
+        },
+        breakpoints: {
+            352: {
+                slidesPerView: 1,
             },
-        });
-        $('.comments__slider__next').click(function() {
-            sliderCommentsSer.trigger('next.owl.carousel');
-        })
-        $('.comments__slider__prev').click(function() {
-            sliderCommentsSer.trigger('prev.owl.carousel');
-        })
+            992: {
+                slidesPerView: 2,
+            },
+            1140:{
+                slidesPerView: 3,
+                spaceBetween: 20
+            }
+        }
     });
+    serviceCommentSl.on('progress', function () {
+        serviceCommentSlCB(this);
+
+    });
+    // data.passedParams.slidesPerView - кол-во слайдов
+    function serviceCommentSlCB(data){
+        if(data.activeIndex > 0){
+            prevCommentServiceSl.classList.add("arrow-active");
+            nextCommentServiceSl.classList.remove("arrow-disabled");
+            nextCommentServiceSl.classList.add("arrow-active");
+        }
+        if(data.activeIndex == 0){
+            prevCommentServiceSl.classList.add("arrow-disabled");
+            prevCommentServiceSl.classList.remove("arrow-active");
+        }
+        if(data.progress == 1){
+            nextCommentServiceSl.classList.add("arrow-disabled");
+            nextCommentServiceSl.classList.remove("arrow-active");
+        }
+    }
 
 
     const prevPersonalSl = document.querySelector(".personal__slider__prev"),
