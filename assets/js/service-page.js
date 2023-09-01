@@ -4,9 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
             modal = document.querySelector(modalSelector),
             close = document.querySelector(closeSelector),
             scroll = calcScroll();
-    
-        modal.style.display = 'none';
-        
+            
         function calcScroll(){
             let div = document.createElement('div');
     
@@ -24,14 +22,14 @@ window.addEventListener("DOMContentLoaded", () => {
     
         trigger.addEventListener("click", (e) => {
             e.preventDefault();
-            modal.style.display = 'block';
+            modal.classList.remove("visible-hide");
             modal.classList.add("modal__active");
             document.body.style.overflow = 'hidden';
             document.body.style.marginRight = `${scroll}px`;
         })
     
         close.addEventListener('click', () => {
-            modal.style.display = 'none';
+            modal.classList.add("visible-hide");
             modal.classList.remove("modal__active");
             document.body.style.overflow = '';
             document.body.style.marginRight = ``;
@@ -39,7 +37,7 @@ window.addEventListener("DOMContentLoaded", () => {
     
         modal.addEventListener('click', (event) => {
             if (event.target === modal){
-                modal.style.display = 'none';
+                modal.classList.add("visible-hide");
                 modal.classList.remove("modal__active");
                 document.body.style.overflow = '';
                 document.body.style.marginRight = ``;
@@ -213,6 +211,8 @@ window.addEventListener("DOMContentLoaded", () => {
     }
     
     modal(".phone__link", ".modal", ".modal__wrap__decor__close-btn");
+    modal(".main__btn", ".modal", ".modal__wrap__decor__close-btn");
+    
     serviceMenu(".services", ".services-menu", ".services-menu__close");
 
     postHeight(".our-post__wrap__article-wrap__post__btn", ".our-post__wrap__article-wrap__post");
@@ -396,22 +396,21 @@ window.addEventListener("DOMContentLoaded", () => {
             autoWidth: true,
             responsive: {
                 0:{
-                    items:1,
                     autoWidth: true,
+                    dots: true
                 },
                 567:{
-                    items: 1.2,
-                    dots: false
+                    items: 1,
                 },
                 768:{
-                    items: 1.4,
-
+                    items: 1.2,
+                    margin: 20
                 },
                 1140:{
-                    items: 2.1,
-
+                    items: 1.5,
+                    margin: 20,
                 },
-                1360:{
+                1361:{
                     items: 2.5,
                     autoWidth: true,
                     margin: 20,
