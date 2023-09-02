@@ -9,7 +9,10 @@ window.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 3,
         direction: 'horizontal',
         loop: false,
-        cssMode: true,
+        simulateTouch: true,
+        touchRatio: 1,
+        touchAngle: 45,
+        grabCursor: true,
     
         navigation: {
         nextEl: '.post-slider__wrap__next',
