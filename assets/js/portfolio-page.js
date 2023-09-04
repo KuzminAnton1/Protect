@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
     prev.classList.add("arrow-disabled");
 
     const ourWorksSl = new Swiper('.portfolio-works__slider__wrap', {
-        slidesPerView: 2,
+        slidesPerView: 1,
         direction: 'horizontal',
         loop: false,
         simulateTouch: true,
@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 slidesPerView: 1,
             },
             992: {
-                slidesPerView: 2,
+                slidesPerView: 1,
             }
         }
     });

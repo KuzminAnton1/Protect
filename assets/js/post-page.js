@@ -30,7 +30,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 slidesPerView: 2,
             },
             1140:{
-                slidesPerView: 3
+                slidesPerView: 3,
+                spaceBetween: 20
             }
         }
     });
