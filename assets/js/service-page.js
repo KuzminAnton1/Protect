@@ -246,12 +246,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
     function servicePageProductsCB(data){
-        if(data.activeIndex > 0){
+        console.log(data.progress)
+        if(data.progress > 0){
             prevProductSl.classList.add("arrow-active");
+            prevProductSl.classList.remove("arrow-disabled");
             nextproductSl.classList.remove("arrow-disabled");
             nextproductSl.classList.add("arrow-active");
         }
-        if(data.activeIndex == 0){
+        if(data.progress == 0){
             prevProductSl.classList.add("arrow-disabled");
             prevProductSl.classList.remove("arrow-active");
         }
@@ -301,12 +303,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
     function servicePageVideoCB(data){
-        if(data.activeIndex > 0){
+        if(data.progress > 0){
             prevVideoSl.classList.add("arrow-active");
             nextVideoSl.classList.remove("arrow-disabled");
             nextVideoSl.classList.add("arrow-active");
         }
-        if(data.activeIndex == 0){
+        if(data.progress == 0){
             prevVideoSl.classList.add("arrow-disabled");
             prevVideoSl.classList.remove("arrow-active");
         }
@@ -353,12 +355,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
     function servicePageFotoCB(data){
-        if(data.activeIndex > 0){
+        if(data.progress > 0){
             prevFotoSl.classList.add("arrow-active");
             nextFotoSl.classList.remove("arrow-disabled");
             nextFotoSl.classList.add("arrow-active");
         }
-        if(data.activeIndex == 0){
+        if(data.progress == 0){
             prevFotoSl.classList.add("arrow-disabled");
             prevFotoSl.classList.remove("arrow-active");
         }
@@ -408,12 +410,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
     function serviceCommentSlCB(data){
-        if(data.activeIndex > 0){
+        if(data.progress > 0){
             prevCommentServiceSl.classList.add("arrow-active");
             nextCommentServiceSl.classList.remove("arrow-disabled");
             nextCommentServiceSl.classList.add("arrow-active");
         }
-        if(data.activeIndex == 0){
+        if(data.progress == 0){
             prevCommentServiceSl.classList.add("arrow-disabled");
             prevCommentServiceSl.classList.remove("arrow-active");
         }
@@ -461,12 +463,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
     function servicePersonalCB(data){
-        if(data.activeIndex > 0){
+        if(data.progress > 0){
             prevPersonalSl.classList.add("arrow-active");
             nextPersonalSl.classList.remove("arrow-disabled");
             nextPersonalSl.classList.add("arrow-active");
         }
-        if(data.activeIndex == 0){
+        if(data.progress == 0){
             prevPersonalSl.classList.add("arrow-disabled");
             prevPersonalSl.classList.remove("arrow-active");
         }
