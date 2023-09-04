@@ -6,13 +6,14 @@ window.addEventListener("DOMContentLoaded", () => {
     prev.classList.add("arrow-disabled");
 
     const ourWorksSl = new Swiper('.portfolio-works__slider__wrap', {
-        slidesPerView: 1,
+        slidesPerView: 2,
         direction: 'horizontal',
         loop: false,
         simulateTouch: true,
         touchRatio: 1,
         touchAngle: 45,
         grabCursor: true,
+        speed: 1200,
     
         navigation: {
         nextEl: '.portfolio-works__slider__next',
@@ -27,7 +28,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 slidesPerView: 1,
             },
             992: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             }
         }
     });
@@ -36,12 +37,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
     function ourWorksSlCB(data){
-        if(data.activeIndex > 0){
+        if(data.progress > 0){
             prev.classList.add("arrow-active");
             next.classList.remove("arrow-disabled");
             next.classList.add("arrow-active");
         }
-        if(data.activeIndex == 0){
+        if(data.progress == 0){
             prev.classList.add("arrow-disabled");
             prev.classList.remove("arrow-active");
         }

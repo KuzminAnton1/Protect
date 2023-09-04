@@ -13,6 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
         touchRatio: 1,
         touchAngle: 45,
         grabCursor: true,
+        speed: 1200,
     
         navigation: {
         nextEl: '.post-slider__wrap__next',
@@ -40,12 +41,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
     function postSliderCB(data){
-        if(data.activeIndex > 0){
+        if(data.progress > 0){
             prev.classList.add("arrow-active");
             next.classList.remove("arrow-disabled");
             next.classList.add("arrow-active");
         }
-        if(data.activeIndex == 0){
+        if(data.progress == 0){
             prev.classList.add("arrow-disabled");
             prev.classList.remove("arrow-active");
         }

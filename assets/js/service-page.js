@@ -219,6 +219,7 @@ window.addEventListener("DOMContentLoaded", () => {
         touchRatio: 1,
         touchAngle: 45,
         grabCursor: true,
+        speed: 1200,
     
         navigation: {
         nextEl: '.products-service__slider__next',
@@ -276,6 +277,7 @@ window.addEventListener("DOMContentLoaded", () => {
         touchRatio: 1,
         touchAngle: 45,
         grabCursor: true,
+        speed: 1200,
 
         navigation: {
         nextEl: '.video-reports-service__slider__next',
@@ -332,6 +334,7 @@ window.addEventListener("DOMContentLoaded", () => {
         touchRatio: 1,
         touchAngle: 45,
         grabCursor: true,
+        speed: 1200,
 
         navigation: {
         nextEl: '.video-reports__foto-slider__next',
@@ -376,13 +379,13 @@ window.addEventListener("DOMContentLoaded", () => {
     prevCommentServiceSl.classList.add("arrow-disabled");
 
     const serviceCommentSl = new Swiper('.comments__content__slider__wrap', {
-        slidesPerView: 3,
         direction: 'horizontal',
         loop: false,
         simulateTouch: true,
         touchRatio: 1,
         touchAngle: 45,
         grabCursor: true,
+        speed: 1200,
 
         navigation: {
         nextEl: '.comments__content__slider__next',
@@ -403,11 +406,10 @@ window.addEventListener("DOMContentLoaded", () => {
                 slidesPerView: 3,
                 spaceBetween: 20
             }
-        }
+        },
     });
-    serviceCommentSl.on('progress', function () {
+    serviceCommentSl.on('isEnd', function () {
         serviceCommentSlCB(this);
-
     });
     function serviceCommentSlCB(data){
         if(data.progress > 0){
@@ -439,6 +441,7 @@ window.addEventListener("DOMContentLoaded", () => {
         touchRatio: 1,
         touchAngle: 45,
         grabCursor: true,
+        speed: 1200,
 
         navigation: {
         nextEl: '.personal__slider__next',

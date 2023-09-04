@@ -13,6 +13,8 @@ window.addEventListener("DOMContentLoaded", () => {
         touchRatio: 1,
         touchAngle: 45,
         grabCursor: true,
+        watchSlidesProgress: true,
+        speed: 1200,
       
         navigation: {
           nextEl: '.sertificate-list__slider__next',
@@ -39,12 +41,12 @@ window.addEventListener("DOMContentLoaded", () => {
     
       });
     function sertificateSlCB(data){
-        if(data.activeIndex > 0){
+        if(data.progress > 0){
             prev.classList.add("arrow-active");
             next.classList.remove("arrow-disabled");
             next.classList.add("arrow-active");
         }
-        if(data.activeIndex == 0){
+        if(data.progress == 0){
             prev.classList.add("arrow-disabled");
             prev.classList.remove("arrow-active");
         }
